@@ -1,0 +1,2908 @@
+
+    <!DOCTYPE html><html lang="zh-TW" data-cast-api-enabled="true"><head><style name="www-roboto">@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/ZLqKeelYbATG60EpZBSDyxJtnKITppOI_IvcXXDNrsc.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/rGvHdJnr2l75qb0YND9NyBJtnKITppOI_IvcXXDNrsc.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/mx9Uck6uB63VIKFYnEMXrRJtnKITppOI_IvcXXDNrsc.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/mbmhprMH69Zi6eEPBYVFhRJtnKITppOI_IvcXXDNrsc.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0TTOQ_MqJVwkKsUn0wKzc2I.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0TUj_cnvWIuuBMVgbX098Mw.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0UbcKLIaa1LC45dFaAfauRA.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Wo_sUJ8uO4YLWRInS22T3Y.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0b6up8jxqWt8HVA3mDhkV_0.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0SYE0-AqJ3nfInTTiDXDjU4.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Y4P5ICox8Kq3LLUNMylGO4.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/WxrXJa0C3KdtC7lMafG4dRTbgVql8nDJpwnrE27mub0.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/OpXUqTo0UgQQhGj_SFdLWBTbgVql8nDJpwnrE27mub0.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/1hZf02POANh32k2VkgEoUBTbgVql8nDJpwnrE27mub0.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/cDKhRaXnQTOVbaoxwdOr9xTbgVql8nDJpwnrE27mub0.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/K23cxWVTrIFD6DJsEVi07RTbgVql8nDJpwnrE27mub0.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/vSzulfKSK0LLjjfeaxcREhTbgVql8nDJpwnrE27mub0.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215;}</style><script name="www-roboto">if (document.fonts && document.fonts.load) {document.fonts.load("400 10pt Roboto", "中");document.fonts.load("500 10pt Roboto", "中");}</script><script>var ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},info: {}});},now: window.performance && window.performance.timing &&window.performance.now ? function() {return window.performance.timing.navigationStart + window.performance.now();} : function() {return (new Date()).getTime();},tick: function(l, t, n) {ticks = ytcsi.gt(n).tick;var v = t || ytcsi.now();if (ticks[l]) {ticks['_' + l] = (ticks['_' + l] || [ticks[l]]);ticks['_' + l].push(v);}ticks[l] = v;},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;},setStart: function(s, t, n) {ytcsi.info('yt_sts', s, n);ytcsi.tick('_start', t, n);}};(function(w, d) {ytcsi.setStart('dhs', w.performance ? w.performance.timing.responseStart : null);var isPrerender = (d.visibilityState || d.webkitVisibilityState) == 'prerender';var vName = d.webkitVisibilityState ? 'webkitvisibilitychange' : 'visibilitychange';if (isPrerender) {ytcsi.info('prerender', 1);var startTick = function() {ytcsi.setStart('dhs');d.removeEventListener(vName, startTick);};d.addEventListener(vName, startTick, false);}if (d.addEventListener) {d.addEventListener(vName, function() {ytcsi.tick('vc');}, false);}var slt = function(el, t) {setTimeout(function() {var n = ytcsi.now();el.loadTime = n;if (el.slt) {el.slt();}}, t);};w.__ytRIL = function(el) {if (!el.getAttribute('data-thumb')) {if (w.requestAnimationFrame) {w.requestAnimationFrame(function() {slt(el, 0);});} else {slt(el, 16);}}};})(window, document);</script><script>var ytcfg = {d: function() {return (window.yt && yt.config_) || ytcfg.data_ || (ytcfg.data_ = {});},get: function(k, o) {return (k in ytcfg.d()) ? ytcfg.d()[k] : o;},set: function() {var a = arguments;if (a.length > 1) {ytcfg.d()[a[0]] = a[1];} else {for (var k in a[0]) {ytcfg.d()[k] = a[0][k];}}}};</script>    <script>
+      ytcfg.set("ALT_PREF_COOKIE_NAME", "OPTS");
+    </script>
+  
+<script>window.yterr = window.yterr || true;</script>  
+
+
+
+
+  <script>
+        (function(){var b={a:"content-snap-width-1",b:"content-snap-width-2",c:"content-snap-width-3"};function f(){var a=[],c;for(c in b)a.push(b[c]);return a}
+function h(a){var c=f().concat(["guide-pinned","show-guide"]),e=c.length,g=[];a.replace(/\S+/g,function(a){for(var d=0;d<e;d++)if(a==c[d])return;g.push(a)});
+return g}
+;function k(a,c,e){var g=document.getElementsByTagName("html")[0],d=h(g.className);a&&1251<=(window.innerWidth||document.documentElement.clientWidth)&&(d.push("guide-pinned"),c&&d.push("show-guide"));e&&(e=(window.innerWidth||document.documentElement.clientWidth)-21-50,1251<=(window.innerWidth||document.documentElement.clientWidth)&&a&&c&&(e-=230),d.push(1262<=e?"content-snap-width-3":1056<=e?"content-snap-width-2":"content-snap-width-1"));g.className=d.join(" ")}
+var l=["yt","www","masthead","sizing","runBeforeBodyIsReady"],m=this;l[0]in m||!m.execScript||m.execScript("var "+l[0]);for(var n;l.length&&(n=l.shift());)l.length||void 0===k?m[n]&&m[n]!==Object.prototype[n]?m=m[n]:m=m[n]={}:m[n]=k;}).call(this);
+
+      try {window.ytbuffer = {};ytbuffer.handleClick = function(e) {var element = e.target || e.srcElement;while (element.parentElement) {if (/(^| )yt-can-buffer( |$)/.test(element.className)) {window.ytbuffer = {bufferedClick: e};element.className += ' yt-is-buffered';break;}element = element.parentElement;}};if (document.addEventListener) {document.addEventListener('click', ytbuffer.handleClick);} else {document.attachEvent('onclick', ytbuffer.handleClick);}} catch(e) {}
+
+    yt.www.masthead.sizing.runBeforeBodyIsReady(true,true,true);
+  </script>
+
+      <script src="/yts/jsbin/scheduler-vfl166vaM/scheduler.js" type="text/javascript" name="scheduler/scheduler"></script>
+
+
+  
+  <link rel="stylesheet" href="/yts/cssbin/www-core-webp-vflVQgEO1.css" name="www-core">
+  <link rel="stylesheet" href="/yts/cssbin/www-pageframe-webp-vfl8DmUTl.css" name="www-pageframe">
+  <link rel="stylesheet" href="/yts/cssbin/www-guide-webp-vflJxShZ8.css" name="www-guide">
+
+    
+<title>  想不到★
+ - YouTube</title><link rel="canonical" href="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA"><link rel="alternate" media="handheld" href="https://m.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA/googleb0f786b2bfce65d3.html"><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA/googleb0f786b2bfce65d3.html">      <meta name="title" content="想不到★">
+
+      <meta name="description" content="">
+
+  <meta name="keywords" content="動物 寵物 歡樂 喵星人 汪星人">
+<link rel="manifest" href="/manifest.json"><link rel="search" type="application/opensearchdescription+xml" href="https://www.youtube.com/opensearch?locale=zh_TW" title="YouTube 影片搜尋"><link rel="shortcut icon" href="https://s.ytimg.com/yts/img/favicon-vflz7uhzw.ico" type="image/x-icon">     <link rel="icon" href="/yts/img/favicon_32-vfl8NGn4k.png" sizes="32x32"><link rel="icon" href="/yts/img/favicon_48-vfl1s0rGh.png" sizes="48x48"><link rel="icon" href="/yts/img/favicon_96-vfldSA3ca.png" sizes="96x96"><link rel="icon" href="/yts/img/favicon_144-vflWmzoXw.png" sizes="144x144"><meta name="theme-color" content="#e62117">        <link rel="image_src" href="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+    <link rel="publisher" href="https://plus.google.com/104209704908190838317">
+        <meta property="og:site_name" content="YouTube">
+      <meta property="og:url" content="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+    <meta property="og:title" content="想不到★">
+    <meta property="og:image" content="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+
+      <meta property="og:description" content=" ">
+
+    <meta property="al:ios:app_store_id" content="544007664">
+    <meta property="al:ios:app_name" content="YouTube">
+      <meta property="al:ios:url" content="vnd.youtube://user/UCd4MIYh2aegsjgFPDBfjpjA">
+
+      <meta property="al:android:url" content="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA?feature=applinks">
+    <meta property="al:android:app_name" content="YouTube">
+    <meta property="al:android:package" content="com.google.android.youtube">
+    <meta property="al:web:url" content="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA?feature=applinks">
+
+    <meta property="og:type" content="profile">
+
+        <meta property="og:video:tag" content="動物">
+        <meta property="og:video:tag" content="寵物">
+        <meta property="og:video:tag" content="歡樂">
+        <meta property="og:video:tag" content="喵星人">
+        <meta property="og:video:tag" content="汪星人">
+
+    <meta property="fb:app_id" content="87741124305">
+
+      <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@youtube">
+    <meta name="twitter:url" content="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+    <meta name="twitter:title" content="想不到★">
+    <meta name="twitter:description" content=" ">
+    <meta name="twitter:image" content="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+    <meta name="twitter:app:name:iphone" content="YouTube">
+    <meta name="twitter:app:id:iphone" content="544007664">
+    <meta name="twitter:app:name:ipad" content="YouTube">
+    <meta name="twitter:app:id:ipad" content="544007664">
+      <meta name="twitter:app:url:iphone" content="vnd.youtube://user/UCd4MIYh2aegsjgFPDBfjpjA">
+      <meta name="twitter:app:url:ipad" content="vnd.youtube://user/UCd4MIYh2aegsjgFPDBfjpjA">
+    <meta name="twitter:app:name:googleplay" content="YouTube">
+    <meta name="twitter:app:id:googleplay" content="com.google.android.youtube">
+    <meta name="twitter:app:url:googleplay" content="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+
+      <link itemprop="url" href="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+    <meta itemprop="name" content="想不到★">
+    <meta itemprop="description" content=" ">
+    <meta itemprop="paid" content="False">
+
+      <meta itemprop="channelId" content="UCd4MIYh2aegsjgFPDBfjpjA">
+
+
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="http://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+        </span>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="https://plus.google.com/104209704908190838317">
+        </span>
+
+
+    <link itemprop="thumbnailUrl" href="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+      <link itemprop="url" href="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+      <meta itemprop="width" content="900">
+      <meta itemprop="height" content="900">
+    </span>
+
+
+      <meta itemprop="isFamilyFriendly" content="True">
+      <meta itemprop="regionsAllowed" content="AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,FI,FJ,FK,FM,FO,FR,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HK,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,JP,KE,KG,KH,KI,KM,KN,KP,KR,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,NZ,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,US,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,YE,YT,ZA,ZM,ZW">
+
+  <div id="watch-container" itemid="" itemscope itemtype="http://schema.org/YoutubeChannelV2">
+        <link itemprop="url" href="https://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+    <meta itemprop="name" content="想不到★">
+    <meta itemprop="description" content=" ">
+    <meta itemprop="paid" content="False">
+
+      <meta itemprop="channelId" content="UCd4MIYh2aegsjgFPDBfjpjA">
+
+
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="http://www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+        </span>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="https://plus.google.com/104209704908190838317">
+        </span>
+
+
+    <link itemprop="thumbnailUrl" href="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+      <link itemprop="url" href="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+      <meta itemprop="width" content="900">
+      <meta itemprop="height" content="900">
+    </span>
+
+
+      <meta itemprop="isFamilyFriendly" content="True">
+      <meta itemprop="regionsAllowed" content="AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,FI,FJ,FK,FM,FO,FR,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HK,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,JP,KE,KG,KH,KI,KM,KN,KP,KR,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,NZ,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,US,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,YE,YT,ZA,ZM,ZW">
+
+  </div>
+      <link rel="alternate" href="android-app://com.google.android.youtube/http/www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+    <link rel="alternate" href="ios-app://544007664/vnd.youtube/www.youtube.com/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+
+
+
+    <link rel="stylesheet" href="/yts/cssbin/www-home-c4-webp-vflJMZAh9.css" name="www-home-c4">
+
+        <link rel="stylesheet" href="/yts/cssbin/www-channels4edit-webp-vflqt_KgX.css" name="www-channels4edit">
+
+        <link rel="stylesheet" href="/yts/cssbin/www-onepick-webp-vflsYL2Tr.css" name="www-onepick">
+
+<style>.yt-uix-button-primary, .yt-uix-button-primary[disabled], .yt-uix-button-primary[disabled]:hover, .yt-uix-button-primary[disabled]:active, .yt-uix-button-primary[disabled]:focus { background-color: #167ac6; }</style></head>
+
+      <body dir="ltr" id="body" class="  ltr  webkit webkit-537  exp-responsive exp-scrollable-guide exp-search-big-thumbs exp-search-big-thumbs246 exp-search-font-18 exp-wn-big-thumbs exp-wn-big-thumbs-v3 exp-wn-font-14   site-center-aligned site-as-giant-card guide-pinning-enabled    visibility-logging-enabled   not-nirvana-dogfood  not-yt-legacy-css    flex-width-enabled      flex-width-enabled-snap    delayed-frame-styles-not-in    yt-user-logged-in  " data-spf-name="other">
+
+  <div id="early-body"></div>
+  <div id="body-container"><div id="a11y-announcements-container" role="alert"><div id="a11y-announcements-message"></div></div><form name="logoutForm" method="POST" action="/logout"><input type="hidden" name="action_logout" value="1"></form><div id="masthead-positioner">  <div id="ticker-content">
+        
+
+  </div>
+  <div id="yt-masthead-container" class="clearfix yt-base-gutter">  <button id="a11y-skip-nav" class="skip-nav" data-target-id="main" tabindex="3">
+略過導覽功能
+  </button>
+<div id="yt-masthead"><div class="yt-masthead-logo-container ">  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon appbar-guide-toggle appbar-guide-clickable-ancestor" type="button" onclick=";return false;" aria-controls="appbar-guide-menu" id="appbar-guide-button" aria-label="導覽區"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-appbar-guide yt-sprite"></span></span></button>
+  <div id="appbar-main-guide-notification-container"></div>
+<span id="yt-masthead-logo-fragment"><a href="/" class="masthead-logo-renderer yt-uix-sessionlink      spf-link " data-sessionlink="itct=CAUQsV4iEwiaz4nl487SAhULrFgKHSX9A40omxw"  id="logo-container" title="YouTube 首頁">  <span title="YouTube 首頁" class="logo masthead-logo-renderer-logo yt-sprite"></span>
+<span class="content-region">TW</span></a></span></div><div id="yt-masthead-user" class="yt-uix-clickcard"><a href="//www.youtube.com/upload" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-opacity yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=mhsb" id="upload-btn" data-upsell="upload" title="上傳"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-material-upload yt-sprite"></span></span></a>    <span id="yt-masthead-notifications" class="yt-uix-clickcard" data-card-action="yt.www.masthead.handleNotificationsClick" data-card-class="yt-scrollbar"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-clickcard-target sb-notif-off" type="button" onclick=";return false;" aria-haspopup="true" id="yt-masthead-notifications-button" aria-label="通知" data-force-position="true" data-orientation="vertical" data-position-fixed="true" data-position="bottomleft"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-bell yt-sprite"></span></span><span class="yt-uix-button-content">&zwnj;</span></button><div id="yt-masthead-notifications-clickcard" class="yt-uix-clickcard-content"><div id="yt-masthead-notifications-header"><span id="yt-masthead-notifications-title" role="heading">通知</span><a href="/account_notifications" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-opacity yt-uix-button-size-default yt-uix-button-has-icon yt-uix-button-empty" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA" id="yt-masthead-notifications-settings" aria-label="設定"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-icon-account-settings yt-sprite"></span></span></a></div><div id="yt-masthead-notifications-content" class="yt-uix-scroller"></div></div></span>
+    <span id="yt-masthead-account-picker" class="yt-uix-clickcard" data-card-action="yt.www.masthead.handleAccountPickerClick" data-card-class="yt-masthead-account-picker-card">
+    <button class="yt-uix-button yt-uix-button-size-default yt-masthead-user-icon yt-uix-clickcard-target" type="button" onclick=";return false;" aria-haspopup="true" aria-label="點選個人資料相片，即可顯示您其他的帳戶" data-force-position="true" data-orientation="vertical" data-position-fixed="true" data-position="bottomleft"><span class="yt-uix-button-content">  <span class="video-thumb  yt-thumb yt-thumb-27"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="27" height="27" alt="" data-ytimg="1" src="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span></button>
+
+      <div class="yt-masthead-account-picker yt-uix-clickcard-content">
+
+
+
+    <a class="yt-masthead-picker-header yt-masthead-picker-active-account" href="https://www.google.com.tw/settings/u/0/personalinfo">
+      0762913@gmail.com
+    </a>
+
+    <div id="yt-unlimited-member"></div>
+
+    <div class="yt-masthead-picker-body">
+        <a class="yt-masthead-picker-photo-wrapper" href="https://aboutme.google.com/u/0?pageId=104209704908190838317#profile_photo">  <span class="video-thumb  yt-thumb yt-thumb-64"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="64" height="64" alt="" data-ytimg="1" src="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+<span class="yt-masthead-picker-photo-change">變更</span></a><div class="yt-masthead-picker-info"><div class="yt-masthead-picker-name" dir="ltr">想不到★</div><div class="yt-masthead-picker-account-subtitle" id="yt-subscriber-count">&#8203;</div><a href="/dashboard?o=U" class="yt-uix-button  yt-masthead-picker-button yt-masthead-picker-button-primary yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA"><span class="yt-uix-button-content">創作者工作室</span></a><a href="/account" class="yt-uix-button  yt-masthead-picker-button yt-masthead-picker-settings-button yt-uix-tooltip yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA" title="YouTube 設定"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-icon-account-settings yt-sprite"></span></span></a></div>
+    </div>
+
+        <div id="yt-masthead-multilogin" class="yt-masthead-multilogin-users">
+      <div id="yt-delegate-accounts"></div>
+
+    </div>
+
+
+    <div id="yt-channel-switcher-link" class="clearfix"></div>
+
+    <div class="yt-masthead-picker-footer clearfix">
+          <a href="https://accounts.google.com/AddSession?service=youtube&amp;uilel=0&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252Fchannel%252FUCd4MIYh2aegsjgFPDBfjpjA%252Fgoogleb0f786b2bfce65d3.html%26hl%3Den%26app%3Ddesktop%26action_handle_signin%3Dtrue&amp;passive=false&amp;hl=en" class="yt-uix-button  yt-masthead-picker-button yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA"><span class="yt-uix-button-content">新增帳戶</span></a>
+
+  <a href="/logout" class="yt-uix-button  yt-masthead-picker-button yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA"><span class="yt-uix-button-content">登出</span></a>
+
+    </div>
+  </div>
+
+  </span>
+
+</div><div id="yt-masthead-content"><form id="masthead-search" class="  search-form consolidated-form  vve-check" action="/results" onsubmit="if (document.getElementById(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false;" data-clicktracking="CAEQ7VAiEwiaz4nl487SAhULrFgKHSX9A40omxw" data-visibility-tracking="CAEQ7VAiEwiaz4nl487SAhULrFgKHSX9A40omxw"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default search-btn-component search-button" type="submit" onclick="if (document.getElementById(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false; document.getElementById(&#39;masthead-search&#39;).submit(); return false;;return true;" tabindex="2" dir="ltr" id="search-btn"><span class="yt-uix-button-content">搜尋</span></button><div id="masthead-search-terms" class="masthead-search-terms-border" dir="ltr"><input id="masthead-search-term" autocomplete="off"  onkeydown="if (!this.value &amp;&amp; (event.keyCode == 40 || event.keyCode == 32 || event.keyCode == 34)) {this.onkeydown = null; this.blur();}" class="search-term masthead-search-renderer-input yt-uix-form-input-bidi" name="search_query" value="" type="text" tabindex="1" placeholder="搜尋" title="搜尋" aria-label="搜尋"></div></form></div></div></div>
+    <div id="masthead-appbar-container" class="clearfix"><div id="masthead-appbar"><div id="appbar-content" class="">      <div id="appbar-nav" class="appbar-content-hidable">
+  <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA">
+    <img class="appbar-nav-avatar" src="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s100-c-k-no-mo-rj-c0xffffff/photo.jpg" title="想不到★" alt="想不到★" height="23" width="23">
+  </a>
+<ul class="appbar-nav-menu"><li>    <h2 class="epic-nav-item-heading " aria-selected="true">
+      想不到★
+    </h2>
+</li><li>    <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/videos" class="yt-uix-button   spf-link yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBcQwy0YASITCJrPieXjztICFQusWAodJf0DjSibHA" aria-selected="false"><span class="yt-uix-button-content">影片</span></a>
+</li><li>    <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/playlists" class="yt-uix-button   spf-link yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBgQwy0YAiITCJrPieXjztICFQusWAodJf0DjSibHA" aria-selected="false"><span class="yt-uix-button-content">播放清單</span></a>
+</li><li>    <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/channels" class="yt-uix-button   spf-link yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBkQwy0YAyITCJrPieXjztICFQusWAodJf0DjSibHA" aria-selected="false"><span class="yt-uix-button-content">頻道</span></a>
+</li><li>    <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/about" class="yt-uix-button   spf-link yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBoQwy0YBCITCJrPieXjztICFQusWAodJf0DjSibHA" aria-selected="false"><span class="yt-uix-button-content">簡介</span></a>
+</li></ul>  </div>
+
+</div></div></div>
+
+</div><div id="masthead-positioner-height-offset"></div><div id="page-container"><div id="page" class="        not-fixed-width-tab-widescreen clearfix"><div id="guide" class="yt-scrollbar">      <div id="appbar-guide-menu" class="appbar-menu appbar-guide-menu-layout appbar-guide-clickable-ancestor yt-uix-scroller yt-uix-tdl" role="navigation">
+    <div id="guide-container">
+        <div class="guide-module-content yt-scrollbar">
+    <ul class="guide-toplevel">
+            <li class="guide-section vve-check"
+    data-visibility-tracking="">
+    <div class="guide-item-container personal-item">
+      
+      <ul class="guide-user-links yt-uix-tdl yt-box" role="menu">
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="what_to_watch-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/"
+    title="首頁"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-personal&amp;ved=CB0QtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEREg9GRXdoYXRfdG9fd2F0Y2g%3D" data-external-id="what_to_watch" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-what-to-watch-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            首頁
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCd4MIYh2aegsjgFPDBfjpjA-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCd4MIYh2aegsjgFPDBfjpjA"
+    title="我的頻道"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-personal&amp;ved=CB4QtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEaEhhVQ2Q0TUlZaDJhZWdzamdGUERCZmpwakE%3D" data-external-id="UCd4MIYh2aegsjgFPDBfjpjA" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-my-channel-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            我的頻道
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="trending-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/feed/trending"
+    title="發燒影片"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-trending&amp;ved=CB8QtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEMEgpGRXRyZW5kaW5n" data-external-id="trending" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-trending-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            發燒影片
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="subscriptions-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/feed/subscriptions"
+    title="訂閱內容"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-personal&amp;ved=CCAQtSwYAyITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEREg9GRXN1YnNjcmlwdGlvbnM%3D" data-external-id="subscriptions" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-my-subscriptions-icon yt-sprite"></span>
+        <span class="display-name ">
+          <span>
+            訂閱內容
+          </span>
+        </span>
+    </span>
+          <span class="guide-count yt-uix-tooltip yt-valign">
+      <span class="yt-valign-container guide-count-value">14</span>
+    </span>
+
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="history-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/feed/history"
+    title="觀看紀錄"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-personal&amp;ved=CCEQtSwYBCITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQELEglGRWhpc3Rvcnk%3D" data-external-id="history" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-history-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            觀看紀錄
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="VLWL-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=WL"
+    title="稍後觀看"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-personal&amp;ved=CCIQtSwYBSITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEGEgRWTFdM" data-external-id="VLWL" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-watch-later-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            稍後觀看
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+      </ul>
+    </div>
+      <hr class="guide-section-separator">
+  </li>
+
+            <li class="guide-section vve-check"
+    data-visibility-tracking="">
+    <div class="guide-item-container personal-item">
+          <h3>
+      <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/playlists" class="g-hovercard yt-uix-sessionlink      spf-link " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-personal" data-name="g-personal" data-ytid="UCd4MIYh2aegsjgFPDBfjpjA" >媒體庫</a>
+    </h3>
+
+      <ul class="guide-user-links yt-uix-tdl yt-box" role="menu">
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="VLPLSx8FfAKWxkSY963FzWa8HDUKtD1b4pAJ-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkSY963FzWa8HDUKtD1b4pAJ"
+    title="開講啦"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCQQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1NZOTYzRnpXYThIRFVLdEQxYjRwQUo%3D" data-external-id="VLPLSx8FfAKWxkSY963FzWa8HDUKtD1b4pAJ" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            開講啦
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="VLPLSx8FfAKWxkRNOJnOYvO-Qpt_FVAlgYWz-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkRNOJnOYvO-Qpt_FVAlgYWz"
+    title="教學 資訊"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCUQtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1JOT0puT1l2Ty1RcHRfRlZBbGdZV3o%3D" data-external-id="VLPLSx8FfAKWxkRNOJnOYvO-Qpt_FVAlgYWz" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            教學 資訊
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="VLPLSx8FfAKWxkT_2RZrj_X3aAzMr3SkBCZ--guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkT_2RZrj_X3aAzMr3SkBCZ-"
+    title="未公開"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCYQtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1RfMlJacmpfWDNhQXpNcjNTa0JDWi0%3D" data-external-id="VLPLSx8FfAKWxkT_2RZrj_X3aAzMr3SkBCZ-" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            未公開
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+              <div class="guide-collapsible-item yt-uix-expander yt-uix-expander-collapsed">
+    <div class="yt-uix-expander-body">
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkQY8q1pVOTGqK0_In_mKyIb"
+    title="心靈"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCgQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1FZOHExcFZPVEdxSzBfSW5fbUt5SWI%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            心靈
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkRqms-WJA0iOn9kwfjbTOGy"
+    title="音樂"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCkQtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1JxbXMtV0pBMGlPbjlrd2ZqYlRPR3k%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            音樂
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkRhAVQpkZDe4DYdbd273_mG"
+    title="我的頻道"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCoQtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1JoQVZRcGtaRGU0RFlkYmQyNzNfbUc%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            我的頻道
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkTCZcA5P0CItVG8QoAmibef"
+    title="大自然"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCsQtSwYAyITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1RDWmNBNVAwQ0l0Vkc4UW9BbWliZWY%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            大自然
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=LLd4MIYh2aegsjgFPDBfjpjA"
+    title="喜歡的影片"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CCwQtSwYBCITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEcEhpWTExMZDRNSVloMmFlZ3NqZ0ZQREJmanBqQQ%3D%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-likes-playlist-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            喜歡的影片
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkTXyUiaa0w_uiZ3wyoQ0d3P"
+    title="歡樂時光"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CC0QtSwYBSITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1RYeVVpYWEwd191aVozd3lvUTBkM1A%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            歡樂時光
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkQ3GggTIcY3y2JylTWHICgl"
+    title="貓咪疑難雜症"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CC4QtSwYBiITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1EzR2dnVEljWTN5Mkp5bFRXSElDZ2w%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            貓咪疑難雜症
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkSZW5kADLcgQ4wTOL-ZbqWv"
+    title="電影"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CC8QtSwYByITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1NaVzVrQURMY2dRNHdUT0wtWmJxV3Y%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            電影
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/playlist?list=PLSx8FfAKWxkRi0U-EAs-N08HtiDvGVddj"
+    title="寵物樂園"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists&amp;ved=CDAQtSwYCCITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEmEiRWTFBMU3g4RmZBS1d4a1JpMFUtRUFzLU4wOEh0aUR2R1ZkZGo%3D" data-external-id="" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            寵物樂園
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+      <button class="yt-uix-expander-head guide-view-more yt-valign" data-visibility-tracking="">
+        <span class="yt-valign-container">
+          顯示較少項目
+        </span>
+      </button>
+    </div>
+    <div class="yt-uix-expander-collapsed-body">
+      <button class="yt-uix-expander-head guide-view-more yt-valign" data-visibility-tracking="">
+        <span class="yt-valign-container">
+          顯示更多
+        </span>
+      </button>
+    </div>
+  </div>
+
+      </ul>
+    </div>
+      <hr class="guide-section-separator">
+  </li>
+
+            <li id="guide-subscriptions-section"
+    class="guide-section hover-action-menu-trigger vve-check"
+    data-visibility-tracking="">
+      <span class="guide-sort-container yt-uix-button-group"><button class="guide-sort-button flip yt-uix-button yt-uix-button-hover-action-menu yt-uix-button-size-small yt-uix-button-has-icon yt-uix-button-empty" onclick=";return false;" aria-haspopup="true" aria-label="訂閱項目排序模式" aria-expanded="false" type="button" data-guide-sort="0" data-button-has-sibling-menu="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-hover-action-menu yt-sprite"></span></span><span class="yt-uix-button-arrow yt-sprite"></span><ul class=" yt-uix-button-menu yt-uix-button-menu-hover-action-menu hid" role="menu" aria-haspopup="true"><li role="menuitem"><span class="yt-uix-button-icon-wrapper yt-uix-button-icon-checkbox"><span class="yt-uix-button-icon-dropdown-checked yt-sprite"></span></span><span onclick=";return false;" class="guide-sort-choice yt-uix-button-menu-item" checked="True" data-guide-sort="0">關聯性最高</span></li><li role="menuitem"><span onclick=";return false;" class="guide-sort-choice yt-uix-button-menu-item" checked="False" data-guide-sort="1">新活動</span></li><li role="menuitem"><span onclick=";return false;" class="guide-sort-choice yt-uix-button-menu-item" checked="False" data-guide-sort="2">A-Z</span></li></ul></button></span>
+        <h3>
+      <a href="/subscription_manager" class=" yt-uix-sessionlink " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-channel" >訂閱內容</a>
+    </h3>
+
+    <div id="guide-subs-footer-container">
+        <div id="guide-subscriptions-container">
+            <div class="guide-channels-content yt-scrollbar">
+    <ul id="guide-channels" class="guide-channels-list guide-item-container parent-list guide-infinite-list yt-uix-scroller filter-has-matches yt-uix-tdl" role="menu">
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCH9YvQJd21NyR3fElqe3jFA-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCH9YvQJd21NyR3fElqe3jFA"
+    title="saori"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-channel&amp;ved=CDQQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEaEhhVQ0g5WXZRSmQyMU55UjNmRWxxZTNqRkE%3D" data-external-id="UCH9YvQJd21NyR3fElqe3jFA" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="20" height="20" alt="" data-ytimg="1" src="/yts/img/pixel-vfl3z5WfW.gif" data-thumb="https://yt3.ggpht.com/-5qQh9ClMR78/AAAAAAAAAAI/AAAAAAAAAAA/XExK5ULv87I/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            saori
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCGkxKM4xrjW9XaCm_6bSnow-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCGkxKM4xrjW9XaCm_6bSnow"
+    title="热门视频榜"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-channel&amp;ved=CDUQtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEaEhhVQ0dreEtNNHhyalc5WGFDbV82YlNub3c%3D" data-external-id="UCGkxKM4xrjW9XaCm_6bSnow" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="20" height="20" alt="" data-ytimg="1" src="/yts/img/pixel-vfl3z5WfW.gif" data-thumb="https://yt3.ggpht.com/-JxiZ1CT7fgg/AAAAAAAAAAI/AAAAAAAAAAA/8ZY1W4qwTYA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name ">
+          <span>
+            热门视频榜
+          </span>
+        </span>
+    </span>
+          <span class="guide-count yt-uix-tooltip yt-valign">
+      <span class="yt-valign-container guide-count-value">99+</span>
+    </span>
+
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCFUtqTcgJgRnmZ3tMU6P74Q-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCFUtqTcgJgRnmZ3tMU6P74Q"
+    title="NAME WEE"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-channel&amp;ved=CDYQtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEaEhhVQ0ZVdHFUY2dKZ1JubVozdE1VNlA3NFE%3D" data-external-id="UCFUtqTcgJgRnmZ3tMU6P74Q" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="20" height="20" alt="" data-ytimg="1" src="/yts/img/pixel-vfl3z5WfW.gif" data-thumb="https://yt3.ggpht.com/-qL4y5Ywuf9s/AAAAAAAAAAI/AAAAAAAAAAA/Dp8grCveygU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name ">
+          <span>
+            NAME WEE
+          </span>
+        </span>
+    </span>
+          <span class="guide-count yt-uix-tooltip yt-valign">
+      <span class="yt-valign-container guide-count-value">3</span>
+    </span>
+
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCWhcUmEbAZLYZf1x1TOhKWA-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCWhcUmEbAZLYZf1x1TOhKWA"
+    title="日本人介紹的日本的文化"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-channel&amp;ved=CDcQtSwYAyITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEaEhhVQ1doY1VtRWJBWkxZWmYxeDFUT2hLV0E%3D" data-external-id="UCWhcUmEbAZLYZf1x1TOhKWA" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="20" height="20" alt="" data-ytimg="1" src="/yts/img/pixel-vfl3z5WfW.gif" data-thumb="https://yt3.ggpht.com/-brrkrPanOaI/AAAAAAAAAAI/AAAAAAAAAAA/tyU4bIkbugM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            日本人介紹的日本的文化
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCKgty9ZceZI8YHLv1sulYNA-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCKgty9ZceZI8YHLv1sulYNA"
+    title="alotofmusic c"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-channel&amp;ved=CDgQtSwYBCITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qDduQEaEhhVQ0tndHk5WmNlWkk4WUhMdjFzdWxZTkE%3D" data-external-id="UCKgty9ZceZI8YHLv1sulYNA" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="20" height="20" alt="" data-ytimg="1" src="/yts/img/pixel-vfl3z5WfW.gif" data-thumb="https://yt3.ggpht.com/-_uwX6KzZKeY/AAAAAAAAAAI/AAAAAAAAAAA/hqkncgsnSKo/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            alotofmusic c
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+    </ul>
+  </div>
+
+        </div>
+    </div>
+      <hr class="guide-section-separator">
+  </li>
+
+            <li class="guide-section vve-check"
+    data-visibility-tracking="">
+    <div class="guide-item-container personal-item">
+      
+      <ul class="guide-user-links yt-uix-tdl yt-box" role="menu">
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="guide_builder-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-nolink    "
+    href="/channels"
+    title="瀏覽頻道"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-manage&amp;ved=CDoQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA" data-serialized-endpoint="0qPduQECCAE%3D" data-external-id="guide_builder" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-builder-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            瀏覽頻道
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+      </ul>
+    </div>
+  </li>
+
+    </ul>
+  </div>
+
+    </div>
+  </div>
+  <div id="appbar-guide-notifications" class="hid">
+        <div id="appbar-guide-notification-watch-later-video-added">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已新增至「稍後觀看」清單</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-watch-later-video-removed">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >從「稍後觀看」中移除</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-subscription">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已新增訂閱內容</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-unsubscription">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已取消訂閱</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-like">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已儲存至播放清單</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-unlike">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已從播放清單中移除</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-video-added">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已新增至播放清單</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-video-removed">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已從播放清單中移除</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-video-like">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已加到喜歡的影片</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-video-unlike">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已從喜歡的影片中移除</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-event-reminder-set">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >您將會收到這個事件的相關提醒。</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-event-reminder-removed">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >已移除事件提醒</span></span></div>
+    -->
+  </div>
+
+
+  </div>
+  <div id="appbar-guide-item-templates" class="hid">
+        <div id="appbar-guide-item-template-playlist">
+      <!--
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item show-insertion-notification " id="__ID__-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-nolink    "
+    href="__URL__"
+    title="__TITLE__"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists" data-serialized-endpoint="" data-external-id="__ID__" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            __TITLE__
+          </span>
+        </span>
+    </span>
+  </a>
+
+      <div class="appbar-guide-notification guide-item-insertion-notification" role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" aria-label="已儲存至播放清單">__NOTIFICATION_OVERLAY_MESSAGE__</span></span></div>
+  </li>
+
+      -->
+    </div>
+    <div id="appbar-guide-item-template-mix">
+      <!--
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item show-insertion-notification " id="__ID__-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-nolink    "
+    href="__URL__"
+    title="__TITLE__"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-playlists" data-serialized-endpoint="" data-external-id="__ID__" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-mix-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            __TITLE__
+          </span>
+        </span>
+    </span>
+  </a>
+
+      <div class="appbar-guide-notification guide-item-insertion-notification" role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" aria-label="已儲存至播放清單">__NOTIFICATION_OVERLAY_MESSAGE__</span></span></div>
+  </li>
+
+      -->
+    </div>
+    <div id="appbar-guide-item-template-channel">
+      <!--
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item show-insertion-notification " id="__ID__-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-nolink    "
+    href="__URL__"
+    title="__TITLE__"
+    data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=g-channel" data-serialized-endpoint="" data-external-id="__ID__" data-visibility-tracking=""
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" width="20" height="20" alt="" data-ytimg="1" src="__THUMBNAIL_URL__" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            __TITLE__
+          </span>
+        </span>
+    </span>
+  </a>
+
+      <div class="appbar-guide-notification guide-item-insertion-notification" role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" aria-label="已新增訂閱內容">__NOTIFICATION_OVERLAY_MESSAGE__</span></span></div>
+  </li>
+
+      -->
+    </div>
+
+  </div>
+
+</div><div class="alerts-wrapper"><div id="alerts" class="content-alignment">  
+</div></div><div id="header"></div><div id="player" class="  off-screen  " role="complementary"><div id="theater-background" class="player-height"></div>  <div id="player-mole-container">
+    <div id="player-unavailable" class="  hid  ">
+      
+    </div>
+
+    <div id="player-api" class="player-width player-height off-screen-target player-api" tabIndex="-1"></div>
+        <script>if (window.ytcsi) {window.ytcsi.tick("cfg", null, '');}</script>
+    <script>var ytplayer = ytplayer || {};ytplayer.config = {"sts":17229,"attrs":{"id":"movie_player"},"params":{"allowfullscreen":"true","allowscriptaccess":"always","bgcolor":"#000000"},"assets":{"js":"\/yts\/jsbin\/player-zh_TW-vfl7oKXvj\/base.js","css":"\/yts\/cssbin\/www-player-webp-vflgjqGEf.css"},"min_version":"8.0.0","url_v9as2":"","html5":true,"messages":{"player_fallback":["如要播放影片，請使用支援 Adobe Flash Player 或 HTML5 的瀏覽器。\u003ca href=\"https:\/\/get.adobe.com\/flashplayer\/\"\u003e取得最新版本的 Flash Player \u003c\/a\u003e \u003ca href=\"\/html5\"\u003e進一步瞭解 HTML5 瀏覽器升級相關資訊\u003c\/a\u003e"]},"args":{"user_display_name":"想不到★","cos":"Windows","innertube_context_client_version":"1.20170307","autoplay":"0","cver":"1.20170307","hl":"zh_TW","pageid":"104209704908190838317","fflags":"flex_theater_mode=true\u0026feeds_on_innertube=true\u0026high_res_timestamps=true\u0026html5_throttle_rate=0.0\u0026html5_serverside_biscotti_id_wait_ms=1000\u0026enable_ccs_buy_flow_for_chirp=true\u0026html5_request_size_min_secs=0.0\u0026enable_mrm_channel_approve=true\u0026html5_adjust_effective_request_size=true\u0026html5_deadzone_multiplier=1.0\u0026enable_offer_restricts_for_watch_page_offers=true\u0026use_new_style=true\u0026kids_enable_privacy_notice=true\u0026html5_tight_max_buffer_allowed_bandwidth_stddevs=0.0\u0026enable_local_channel=true\u0026html5_always_reload_on_403=true\u0026html5_local_max_byterate_lookahead=15\u0026music_tastebuilder_p13n=true\u0026yt_unlimited_pts_skip_ads_promo_desktop_always=true\u0026desktop_fsi_promo=style_masthead_ad\u0026disable_html5_cast_hdcp_filter=true\u0026kids_enable_columbia_lp=true\u0026html5_min_upgrade_health=0\u0026html5_live_4k_more_buffer=true\u0026pla_shelf_hovercard=true\u0026enable_responsive_embed_snippet=true\u0026html5_background_quality_cap=360\u0026html5_min_secs_between_format_selections=8.0\u0026html5_background_cap_idle_secs=60\u0026enable_live_state_auth=true\u0026html5_max_buffer_health_for_downgrade=0\u0026kids_enable_block_servlet=true\u0026android_min_bitrate_kbs_hd=200\u0026html5_strip_emsg=true\u0026html5_get_video_info_timeout_ms=0\u0026disable_mediasession=true\u0026live_chunk_readahead=3\u0026yto_enable_ytr_promo_refresh_assets=true\u0026html5_allowable_liveness_drift_chunks=2\u0026html5_reseek_on_infinite_buffer=true\u0026launch_new_wallet_api=true\u0026html5_audio_preload_duration=2.0\u0026html5_post_interrupt_readahead=0\u0026native_controls_assume_media_volume=true\u0026html5_min_vss_watchtime_to_cut_secs_redux=0.0\u0026ad_duration_threshold_for_showing_endcap_seconds=15\u0026vss_dni_delayping=0\u0026ios_disable_notification_preprompt=true\u0026kids_enable_brazil_lp=true\u0026html5_min_buffer_to_resume=6\u0026enable_fmp4_defrag=true\u0026html5_playing_event_buffer_underrun=true\u0026use_fast_fade_in_0s=true\u0026html5_check_for_reseek=true\u0026forced_brand_precap_duration_ms=2000\u0026yto_enable_unlimited_landing_page_yto_features=true\u0026embed_snippet_includes_version=true\u0026fixed_padding_skip_button=true\u0026doubleclick_gpt_retagging=true\u0026legacy_autoplay_flag=true\u0026playready_on_borg=true\u0026html5_repredict_interval_secs=0.0\u0026use_web_player_gestures=true\u0026use_new_skip_icon=true\u0026html5_reduce_startup_rebuffers=true\u0026kids_enable_spain_lp=true\u0026fix_gpt_pos_params=true\u0026mpu_visible_threshold_count=2\u0026log_js_exceptions_fraction=0.20\u0026html5_pause_manifest_ended=true\u0026mweb_adsense_instreams_disabled_for_android_tablets=true\u0026interaction_log_delayed_event_batch_size=200\u0026polymer_report_missing_web_navigation_endpoint=false\u0026android_min_bitrate_kbs_sd=200\u0026html5_spherical_bicubic_mode=0\u0026dash_manifest_version=4\u0026mweb_blacklist_progressive_chrome_mobile=true\u0026disable_new_pause_state3=true\u0026kids_asset_theme=server_side_assets\u0026ad_video_end_renderer_duration_milliseconds=7000\u0026html5_enable_embedded_player_visibility_signals=true\u0026ios_notifications_disabled_subs_tab_promoted_item_promo=true\u0026html5_default_quality_cap=0\u0026sidebar_renderers=true\u0026html5_live_disable_dg_pacing=true\u0026html5_get_video_info_promiseajax=true\u0026html5_retry_media_element_errors_delay=0\u0026website_actions_throttle_percentage=1.0\u0026enable_audio_cast=true\u0026lugash_header_warmup=true\u0026disable_html5_manifest_namespace=true\u0026lugash_header_by_service=true\u0026ios_enable_mixin_accessibility_custom_actions=true\u0026html5_connect_timeout_secs=7.0\u0026kids_enable_server_side_assets=true\u0026enable_pla_desktop_shelf=true\u0026disable_html5_size_check=true\u0026mweb_pu_android_chrome_54_above=true\u0026dynamic_ad_break_seek_threshold_sec=0\u0026html5_request_sizing_multiplier=0.8\u0026json_serialize_shut_off=true\u0026html5_ad_no_buffer_abort_after_skippable=true\u0026kids_enable_terms_servlet=true\u0026html5_live_pin_to_tail=true\u0026use_push_for_desktop_live_chat=true\u0026enable_mweb_ypc_promotion_renderer=true\u0026send_html5_api_stats_ads_abandon=true\u0026html5_tight_max_buffer_allowed_impaired_time=0.0\u0026kids_enable_post_onboarding_red_flow=true\u0026show_countdown_on_bumper=true\u0026request_mpu_on_unfilled_ad_break=true\u0026html5_report_conn=true\u0026html5_max_av_sync_drift=50\u0026html5_min_vss_watchtime_to_cut_secs=0.0\u0026yto_feature_hub_channel=false\u0026show_thumbnail_on_standard=true\u0026html5_min_readbehind_secs=0\u0026disable_client_side_midroll_freq_capping=true\u0026enable_red_carpet_p13n_shelves=true\u0026log_it_display_tree=true\u0026html5_max_buffer_duration=0\u0026html5_bandwidth_window_size=0\u0026king_crimson_player_redux=true\u0026html5_max_vss_watchtime_ratio=0.0\u0026desktop_cleanup_companion_on_instream_begin=true\u0026kids_enable_latam_lp=true\u0026html5_new_preloading=true\u0026enable_android_encoder_constant_bitrate=true\u0026stop_using_ima_sdk_gpt_request_activity=true\u0026yto_enable_watch_offer_module=true\u0026rendering_is_optimized_scrolling_enabled=false\u0026enable_yt_music_lp=true\u0026king_crimson_player=false\u0026html5_multicam=true\u0026chrome_promo_enabled=true\u0026html5_idle_preload_secs=1\u0026html5_trust_platform_bitrate_limits=true\u0026html5_stale_dash_manifest_retry_factor=1.0\u0026html5_min_readbehind_cap_secs=0\u0026android_enable_thumbnail_overlay_side_panel=false\u0026disable_search_mpu=true\u0026dynamic_ad_break_pause_threshold_sec=0\u0026spherical_on_android_iframe=true\u0026html5_variability_no_discount_thresh=1.0\u0026html5_timeupdate_readystate_check=true\u0026html5_long_term_bandwidth_window_size=0\u0026html5_max_readahead_bandwidth_cap=0\u0026live_readahead_seconds_multiplier=0.8\u0026sdk_wrapper_levels_allowed=0\u0026autoplay_time=8000\u0026html5_idle_time_msec=0\u0026variable_load_timeout_ms=0\u0026html5_use_adaptive_live_readahead=true\u0026html5_burst_less_for_no_bw_data=true\u0026html5_progressive_signature_reload=true\u0026html5_variability_full_discount_thresh=3.0\u0026html5_min_startup_smooth_target=0.0\u0026enable_get_offers_for_item_list_for_get_cart=true\u0026html5_variability_discount=0.5\u0026enable_playlist_multi_season=true\u0026html5_vp9_live_whitelist=false","ssl":"1","apiary_host_firstparty":"","host_language":"zh-TW","cr":"TW","cosver":"10.0","gapi_hint_params":"m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.-QXB_U8R8Eg.O\/m=__features__\/rt=j\/d=1\/rs=AHpOoo8PUrmM-10GgMhjxf52iM2kLRUicg","user_display_image":"https:\/\/yt3.ggpht.com\/-O5C7J8KjxGQ\/AAAAAAAAAAI\/AAAAAAAAAAA\/Rgg35vPpMYw\/s28-c-k-no-mo-rj-c0xffffff\/photo.jpg","authuser":0,"innertube_api_key":"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8","cbr":"Chrome","player_error_log_fraction":"1.0","apiary_host":"","innertube_api_version":"v1","enablejsapi":"1","fexp":"3300105,3300134,3300164,3313274,3313321,9406113,9422596,9428398,9431012,9433221,9434046,9434289,9439829,9446054,9446364,9447856,9449034,9449243,9450059,9450260,9450707,9450949,9456640,9457141,9457284,9457344,9458230,9458703,9459959,9460160,9460196,9460255,9461561,9462191,9462907,9463496,9463891,9464098,9465025,9465534,9465633,9465769","cbrver":"57.0.2987.98","c":"WEB"},"url_v8":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vflk-b1gu\/cps.swf","url":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vflk-b1gu\/watch_as3.swf"};ytplayer.load = function() {yt.player.Application.create("player-api", ytplayer.config);ytplayer.config.loaded = true;};</script>
+
+
+    <div id="watch-queue-mole" class="video-mole mole-collapsed hid"><div id="watch-queue" class="watch-playlist player-height"><div class="main-content"><div class="watch-queue-header"><div class="watch-queue-info"><div class="watch-queue-info-icon"><span class="tv-queue-list-icon yt-sprite"></span></div><h3 class="watch-queue-title">候播清單</h3><h3 class="tv-queue-title">候播清單</h3><span class="tv-queue-details">目前使用者：<span class="yt-user-name " dir="ltr">想不到★</span></span></div><div class="watch-queue-control-bar control-bar-button"><div class="watch-queue-mole-info"><div class="watch-queue-control-bar-icon"><span class="watch-queue-icon yt-sprite"></span></div><div class="watch-queue-title-container"><span class="watch-queue-count"></span><span class="watch-queue-title">候播清單</span><span class="tv-queue-title">候播清單</span></div></div>  <span id="watch-queue-save-as-playlist-widget" class="create-playlist-widget-button yt-uix-clickcard" data-click-outside-persists="true" data-dialog-id="watch-queue-save-as-playlist-dialog">
+      <div id="watch-queue-save-as-playlist-dialog" class="create-playlist-widget-dialog hid yt-uix-clickcard-content">
+          <form class="create-playlist-widget-form yt-uix-focustrap" method="POST" action="/playlist_ajax?action_create_playlist=1" data-max-title-length="150">
+    <input class="video-ids-input" type="hidden" name="video_ids">
+    <input class="source-playlist-id-input" type="hidden" name="source_playlist_id">
+    <div class="create-playlist-section">
+      <label>
+        <h2 class="yt-uix-form-label">
+播放清單標題
+        </h2>
+        <span class="title-input-container yt-uix-form-input-container yt-uix-form-input-text-container  yt-uix-form-input-fluid-container"><span class=" yt-uix-form-input-fluid"><input class="yt-uix-form-input-text title-input" name="n" type="text" maxlength="150"></span></span>
+      </label>
+    </div>
+
+    <div class="create-playlist-section create-playlist-bottom-section clearfix">
+        <input class="privacy-value-input" type="hidden" name="p" value="public">
+  <div class="yt-uix-menu yt-uix-menu-sibling-content privacy-button-container" >  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text yt-uix-button-has-icon no-icon-markup privacy-button yt-uix-menu-trigger" type="button" onclick=";return false;" aria-pressed="false" role="button" aria-haspopup="true" aria-label="播放清單隱私設定" data-privacy-state="privacy-public"><span class="yt-uix-button-content">公開</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+<div class="yt-uix-menu-content yt-ui-menu-content yt-uix-menu-content-hidden" role="menu">  <ul class="create-playlist-widget-privacy-menu">
+      <li role="menuitem">
+      <button type="button" title="公開" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup is-selected"
+ data-value="public" data-privacy-state="privacy-public">
+    <span class="yt-ui-menu-item-label">公開</span>
+  </button>
+
+  </li>
+
+
+      <li role="menuitem">
+      <button type="button" title="不公開" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup"
+ data-value="unlisted" data-privacy-state="privacy-unlisted">
+    <span class="yt-ui-menu-item-label">不公開</span>
+  </button>
+
+  </li>
+
+
+      <li role="menuitem">
+      <button type="button" title="私人" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup"
+ data-value="private" data-privacy-state="privacy-private">
+    <span class="yt-ui-menu-item-label">私人</span>
+  </button>
+
+  </li>
+
+  </ul>
+</div></div>
+
+        <div class="create-playlist-buttons">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default cancel-button" type="reset" onclick=";return true;"><span class="yt-uix-button-content">取消</span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary create-button" type="submit" onclick=";return true;" disabled="True"><span class="yt-uix-button-content">建立</span></button>
+    <button class="yt-uix-button-disabled-aria-label" aria-disabled="true" onclick="return false;">建立</button>
+  </div>
+
+    </div>
+    <div class="yt-uix-focustrap-trap" tabindex="0"></div>
+  </form>
+
+      </div>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon no-icon-markup yt-uix-clickcard-target add-new-pl-btn" type="button" onclick=";return false;" data-orientation="vertical" data-position="bottomright"><span class="yt-uix-button-content">新增播放清單</span></button>
+  </span>
+  <span class="dark-overflow-action-menu">
+      
+    
+    
+    <button class="flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" onclick=";return false;" aria-haspopup="true" aria-label="候播清單操作項目" aria-expanded="false" type="button" ><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid" role="menu" aria-haspopup="true"><li role="menuitem"><span onclick=";return false;" class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="save-as-playlist" >另存成播放清單</span></li><li role="menuitem"><span onclick=";return false;" class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="remove-all" >全部移除</span></li><li role="menuitem"><span onclick=";return false;" class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="disconnect" >中斷連線</span></li></ul></button>
+  </span>
+  <div class="watch-queue-controls">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button prev-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="上一部影片"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-prev yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button play-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="播放"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-play yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button pause-watch-queue-button yt-uix-button-opacity yt-uix-tooltip hid yt-uix-tooltip" type="button" onclick=";return false;" title="暫停"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-pause yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button next-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="下一部影片"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-next yt-sprite"></span></span></button>
+  </div>
+</div><div class="autoplay-dismiss-bar fade-out"><span class="autoplay-dismiss-title-label">即將播放下一部影片</span><span><button class="yt-uix-button yt-uix-button-size-default autoplay-dismiss-button yt-uix-tooltip" type="button" onclick=";return false;" title="停止"><span class="yt-uix-button-content">停止</span></button></span></div></div><div class="watch-queue-items-container yt-scrollbar-dark yt-scrollbar"><div class="yt-uix-scroller playlist-videos-list"><ol class="watch-queue-items-list" data-scroll-action="yt.www.watchqueue.loadThumbnails">  <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+</ol><div class="autoplay-control-container yt-uix-scroller-scroll-unit hid">  <div class="autoplay-control-bar">
+    <label class="autoplay-label" for=autoplay-toggle-id></label>
+    <label class="yt-uix-form-input-checkbox-container yt-uix-form-input-container yt-uix-form-input-paper-toggle-container "><input class="yt-uix-form-input-checkbox" type="checkbox" id="autoplay-toggle-id"/><div class="yt-uix-form-input-paper-toggle-bg yt-uix-form-input-paper-toggle-bar"></div><div class="yt-uix-form-input-paper-toggle-bg yt-uix-form-input-paper-toggle-button"></div></label>
+  </div>
+</div><div class="up-next-item-container hid"></div></div></div></div>  <div class="hid">
+    <div id="watch-queue-title-msg">
+候播清單
+    </div>
+
+    <div id="tv-queue-title-msg">候播清單</div>
+
+    <div id="watch-queue-count-msg">
+__count__/__total__
+    </div>
+
+    <div id="watch-queue-loading-template">
+      <!--
+          <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+      -->
+    </div>
+  </div>
+</div></div>
+
+    <div id="player-playlist" class="  hid  ">
+      
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+</div><div id="content" class="  content-alignment" role="main">
+
+
+  <div class="branded-page-v2-container branded-page-base-bold-titles branded-page-v2-container-flex-width branded-page-v2-has-top-row" >
+      <div class="branded-page-v2-top-row">
+                  <div class="branded-page-v2-header channel-header yt-card">
+      <div class="secondary-header-contents">
+              <a class="secondary-header-action" href="/subscribers" role="menuitem">
+        <span class="nav-text">
+          訂閱人數：1
+        </span>
+      </a>
+      <a class="secondary-header-action" href="/analytics#r=summary;fi=u-d4MIYh2aegsjgFPDBfjpjA" role="menuitem">
+          <span class="header-action-icon analytics-icon yt-sprite"></span>
+        <span class="nav-text">
+          觀看次數：110
+        </span>
+      </a>
+      <a class="secondary-header-action" href="/my_videos" role="menuitem">
+          <span class="header-action-icon vm-icon yt-sprite"></span>
+        <span class="nav-text">
+          影片管理員
+        </span>
+      </a>
+
+      </div>
+    <div id="gh-banner">
+          <style>
+      #c4-header-bg-container {
+      background-image: url(//yt3.ggpht.com/-6QHXICsNUmkJ9uyltEtW5sSfC4RkaDnU2LJlg-0HqcIjfvL34Iyc3WoivZm0lpxs9qisp4G=w1060-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no);
+  }
+
+
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+         screen and (min-resolution: 1.5dppx) {
+#c4-header-bg-container {
+        background-image: url(//yt3.ggpht.com/-6QHXICsNUmkJ9uyltEtW5sSfC4RkaDnU2LJlg-0HqcIjfvL34Iyc3WoivZm0lpxs9qisp4G=w2120-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no);
+    }
+  }
+
+#c4-header-bg-container .hd-banner-image {
+      background-image: url(//yt3.ggpht.com/-6QHXICsNUmkJ9uyltEtW5sSfC4RkaDnU2LJlg-0HqcIjfvL34Iyc3WoivZm0lpxs9qisp4G=w2120-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no);
+  }
+
+    </style>
+  <div id="c4-header-bg-container" class="c4-visible-on-hover-container  c4-module-is-editable c4-visible-on-hover-container has-custom-banner">
+    <div class="hd-banner">
+      <div class="hd-banner-image "></div>
+    </div>
+          <div id="header-links">
+
+      <ul class="about-custom-links">
+            <li class="channel-links-item">
+    <a href="https://plus.google.com/u/0/110945723525502880671?pageId=104209704908190838317" rel="me nofollow" target="_blank" title="google+" class="about-channel-link yt-uix-redirect-link about-channel-link-with-icon">
+        <img src="//s2.googleusercontent.com/s2/favicons?domain_url=https%3A%2F%2Fplus.google.com%2Fu%2F0%2F110945723525502880671&amp;feature=youtube_channel" class="about-channel-link-favicon" alt="" width="16" height="16">
+        <span class="about-channel-link-text">
+          google+
+        </span>
+    </a>
+  </li>
+
+      </ul>
+  </div>
+
+      <span class="c4-module-editor-actions">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-c4-view-action yt-uix-button-empty yt-uix-button-has-icon no-icon-markup c4-visible-on-hover c4-button-opacity flip c4-editor-edit" type="button" onclick=";return false;" id="c4-branding-dropdown" aria-label="品牌宣傳設定" data-button-has-sibling-menu="true" data-button-menu-id="c4-branding-dropdown-menu"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+    <ul id="c4-branding-dropdown-menu" role="menu" class="hid">
+            <li role="menuitem">
+    <a id="c4-edit-links-banner-button" class="yt-uix-button-menu-item" href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/about?edit_links=1#c4-primary-header-contents">
+編輯連結
+    </a>
+  </li>
+
+      <li role="menuitem">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span class="c4-branding-upload-button open-banner-image-editor yt-uix-button-menu-item" data-title="頻道圖片" data-show-banner-preview="True" data-width="2048" data-max-file-size="4" data-height="1152" data-use-channel-storage="false" data-recommended-width="2560" data-banner-gallery-title="圖庫" data-recommended-height="1440" data-locale="zh_TW">
+    編輯頻道圖片
+
+  </span>
+
+  </li>
+
+
+    </ul>
+  </span>
+    <div class="c4-header-bg-message" id="c4-banner-uploading-message">
+    <p class="c4-header-bg-message-content">
+儲存中...
+    </p>
+  </div>
+  <div class="c4-header-bg-message fade-out-message" id="c4-banner-upload-success-message">
+    <p class="c4-header-bg-message-content">
+已儲存！
+    </p>
+  </div>
+  <div class="c4-header-bg-message fade-out-message" id="c4-banner-upload-error-message">
+    <p class="c4-header-bg-message-content">
+    </p>
+  </div>
+
+
+
+          <div class="channel-header-profile-image-container is-editable">
+      <img class="channel-header-profile-image" src="https://yt3.ggpht.com/-O5C7J8KjxGQ/AAAAAAAAAAI/AAAAAAAAAAA/Rgg35vPpMYw/s100-c-k-no-mo-rj-c0xffffff/photo.jpg" title="想不到★" alt="想不到★">
+            
+  <div class="yt-uix-overlay settings-dialog-container" data-overlay-class="settings-dialog-fg">
+    <span class="  yt-uix-overlay-target"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-c4-view-action yt-uix-button-empty yt-uix-button-has-icon no-icon-markup c4-visible-on-hover yt-uix-button-nakedicon channel-header-profile-image-edit-button c4-button-opacity c4-editor-edit" type="button" onclick=";return false;" aria-label="品牌宣傳設定"></button></span>
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div class="yt-dialog-header">
+    <h2 class="yt-dialog-title">
+      編輯頻道圖示
+    </h2>
+  </div>
+  您的頻道圖示已經連結<a href="//support.google.com/accounts/?p=brand_accounts&amp;hl=zh-TW">品牌帳戶</a>。如有更改，可能需要幾分鐘的時間才會反映在您的頻道上。
+
+
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+<div class="yt-dialog-footer">    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default   yt-dialog-dismiss yt-dialog-cancel" type="button" onclick=";return false;" data-action="cancel"><span class="yt-uix-button-content">取消</span></button>
+
+  <a href="https://aboutme.google.com/?pageId=104209704908190838317#profile_photo" class="yt-uix-button      yt-dialog-dismiss yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA" target="_blank" data-action="cancel"><span class="yt-uix-button-content">編輯</span></a>
+</div>        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+    </div>
+
+  </div>
+
+    </div>
+          <div class="primary-header-contents clearfix " id="c4-primary-header-contents">
+    <div class="primary-header-upper-section-wrapper clearfix">
+        <div class="primary-header-upper-section">
+    <div class="primary-header-upper-section-block">
+      <h1 class="branded-page-header-title">
+        <span class="qualified-channel-title ellipsized"><span class="qualified-channel-title-wrapper"><span dir="ltr" class="qualified-channel-title-text" ><a dir="ltr" href="/channel/UCd4MIYh2aegsjgFPDBfjpjA" class="spf-link branded-page-header-title-link yt-uix-sessionlink" title="想不到★" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA"      >想不到★</a></span></span></span>
+      </h1>
+        <div class="view-as-menu secondary-header-action">
+          <span class="view-as-menu-text">
+以下列身分查看：
+          </span>
+          <div class="yt-uix-menu yt-uix-menu-flipped" >  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text view-as-menu-trigger yt-uix-menu-trigger" type="button" onclick=";return false;" aria-pressed="false" role="button" aria-haspopup="true" aria-label="Action menu."><span class="yt-uix-button-content">您本人</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+<div class="yt-uix-menu-content yt-ui-menu-content yt-uix-menu-content-hidden" role="menu">      <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/googleb0f786b2bfce65d3.html?view_as=public" class="yt-ui-menu-item yt-uix-menu-close-on-select"
+>
+    <span class="yt-ui-menu-item-label">新訪客</span>
+  </a>
+
+      <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/googleb0f786b2bfce65d3.html?view_as=subscriber" class="yt-ui-menu-item yt-uix-menu-close-on-select"
+>
+    <span class="yt-ui-menu-item-label">回訪的訂閱者</span>
+  </a>
+
+</div></div>
+        </div>
+    </div>
+    <div class="primary-header-upper-section-block">
+      <div class="primary-header-actions">
+                  <span class="channel-header-subscription-button-container yt-uix-button-subscription-container yt-subscription-button-disabled-mask-container with-preferences" ><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-subscribe-branded yt-uix-button-has-icon no-icon-markup yt-uix-subscription-button yt-can-buffer" type="button" onclick=";return false;" aria-live="polite" aria-busy="false" aria-role="button" disabled="True" data-clicktracking="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=channels4&amp;ved=CD0QmysiEwiaz4nl487SAhULrFgKHSX9A40omxw" data-style-type="branded" data-channel-external-id="UCd4MIYh2aegsjgFPDBfjpjA"><span class="yt-uix-button-content"><span class="subscribe-label" aria-label="訂閱">訂閱</span><span class="subscribed-label" aria-label="取消訂閱">已訂閱</span><span class="unsubscribe-label" aria-label="取消訂閱">取消訂閱</span></span></button><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon yt-uix-subscription-preferences-button" type="button" onclick=";return false;" aria-live="polite" aria-busy="false" aria-role="button" aria-label="訂閱偏好設定" data-channel-external-id="UCd4MIYh2aegsjgFPDBfjpjA"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-subscription-preferences yt-sprite"></span></span></button><span class="yt-subscription-button-subscriber-count-branded-horizontal subscribed yt-uix-tooltip" title="1" tabindex="0" aria-label="訂閱人數：1">1</span>  <span class="yt-subscription-button-disabled-mask yt-uix-tooltip" title="您無法訂閱自己的頻道"></span>
+  <span class="subscription-preferences-overlay-container">
+    
+  <div class="yt-uix-overlay "  data-overlay-style="primary" data-overlay-shape="tiny">
+    
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div class="subscription-preferences-overlay-content-container">
+    <div class="subscription-preferences-overlay-loading ">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+    </div>
+    <div class="subscription-preferences-overlay-content">
+    </div>
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  </span>
+</span>
+
+    <div class="casual-channel-settings-button-container">
+        
+  <div class="yt-uix-overlay channel-settings-overlay" data-overlay-class="casual-channel channel-settings-dialog-fg">
+    <span class="  yt-uix-overlay-target">
+
+
+
+
+
+
+
+
+
+
+
+
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon casual-settings-button" type="button" onclick=";return false;" aria-label="顯示頻道設定"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-settings-material yt-sprite"></span></span></button>
+</span>
+        <div class="yt-dialog hid " id="c4-channel-settings-dialog-content">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+            
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+<div class="yt-dialog-footer">  <div class="yt-uix-overlay-actions">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default   yt-dialog-dismiss yt-dialog-cancel" type="button" onclick=";return false;" data-action="cancel"><span class="yt-uix-button-content">取消</span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary channel-settings-dialog-save" type="button" onclick=";return false;"><span class="yt-uix-button-content">儲存</span></button>
+  </div>
+</div>        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+    
+  </div>
+
+      <div id="channel-subheader" class="clearfix branded-page-gutter-padding appbar-content-trigger">
+    <ul id="channel-navigation-menu" class="clearfix">
+        <li class="">
+          <h2 class="epic-nav-item-heading " aria-label="首頁 tab" aria-selected="true" tabindex="0">首頁</h2>
+        </li>
+        <li class="">
+          <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/videos" class="yt-uix-button  spf-link  yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBcQwy0YASITCJrPieXjztICFQusWAodJf0DjSibHA"><span class="yt-uix-button-content">影片</span></a>
+        </li>
+        <li class="">
+          <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/playlists" class="yt-uix-button  spf-link  yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBgQwy0YAiITCJrPieXjztICFQusWAodJf0DjSibHA"><span class="yt-uix-button-content">播放清單</span></a>
+        </li>
+        <li class="">
+          <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/channels" class="yt-uix-button  spf-link  yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBkQwy0YAyITCJrPieXjztICFQusWAodJf0DjSibHA"><span class="yt-uix-button-content">頻道</span></a>
+        </li>
+        <li class="">
+          <a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA/about" class="yt-uix-button  spf-link  yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CBoQwy0YBCITCJrPieXjztICFQusWAodJf0DjSibHA"><span class="yt-uix-button-content">簡介</span></a>
+        </li>
+        <li class="">
+          <div id="channel-search" ><button class="show-search epic-nav-item secondary-nav" title="搜尋頻道"><span class="epic-nav-item-heading-icon search-icon yt-sprite"></span></button><form class="search-form epic-nav-item secondary-nav" action="/channel/UCd4MIYh2aegsjgFPDBfjpjA/search" method="get"><span class=" yt-uix-form-input-container yt-uix-form-input-text-container "><input class="yt-uix-form-input-text search-field" name="query" id="channels-search-field" type="text" value="" placeholder="搜尋頻道" maxlength="100" autocomplete="off"></span></form></div>
+        </li>
+    </ul>
+  </div>
+
+
+  </div>
+
+
+
+      </div>
+
+    <div class="branded-page-v2-col-container">
+      <div class="branded-page-v2-col-container-inner">
+        <div class="branded-page-v2-primary-col">
+          <div class="   yt-card  clearfix">
+              <div class="branded-page-v2-body branded-page-v2-primary-column-content" id="">
+    
+    <ul id="browse-items-primary">
+      
+      
+      
+          <script type="application/ld+json">
+      {"@type":"ItemList","itemListElement":[],"@context":"http:\/\/schema.org","url":"https:\/\/www.youtube.com\/channel\/UCd4MIYh2aegsjgFPDBfjpjA"}
+    </script>
+      <li>
+          <div class="c4-spotlight-module tabbed-spotlight-editor yt-section-hover-container clearfix" id="c4-spotlight-editor">
+      <ul class="yt-uix-tabs branded-page-box spotlight-editor-tabs" data-uix-tabs-selected-extra-class="selected" role="tablist">
+    <li class="yt-uix-tabs-tab epic-nav-item spotlight-editor-tab featured-content-tab yt-uix-tabs-selected selected" data-uix-tabs-target-id="c4-featured-content-preview" tabindex="0" role="tab">
+回訪的訂閱者
+    </li>
+    <li class="yt-uix-tabs-tab epic-nav-item spotlight-editor-tab upsell-tab" data-uix-tabs-target-id="c4-upsell-preview" tabindex="0" role="tab">
+新訪客
+    </li>
+  </ul>
+
+    <div class="c4-spotlight-module-component c4-visible-on-hover-container featured-content" id="c4-featured-content-preview" role="tabpanel">
+      
+  <div class="yt-uix-inlineedit " id="c4-welcome-editor">
+    <div class="yt-uix-inlineedit-view-container">
+        <div class="c4-module-is-editable">
+        <div class="c4-spotlight-module-component welcome branded-page-box">
+              <div class="shelf-wrapper clearfix">
+          <div class="lohp-newspaper-shelf shelf-item vve-check  yt-section-hover-container" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CEQQ0R4iEwiaz4nl487SAhULrFgKHSX9A40omxw">
+    
+            <h2 class="branded-page-module-title">
+          <span class="branded-page-module-title-text">
+      接下來請看
+    </span>
+
+  </h2>
+
+
+    <div class="lohp-shelf-content">
+      <div class="lohp-large-shelf-container">
+            <div class="clearfix" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CEUQ0h4YACITCJrPieXjztICFQusWAodJf0DjSibHA">
+    
+      <div class="vve-check"
+             data-visibility-tracking="CBQQ0h4YACITCJrPieXjztICFQusWAodJf0DjSibHEDYq_-e5anw2sQB"
+           >
+        <span class="lohp-thumb-wrap spf-link  ux-thumb-wrap contains-addto"><a href="/watch?v=xLXBTlPf1dg" class="yt-uix-sessionlink yt-fluid-thumb-link" aria-hidden="true"  data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEUQ0h4YACITCJrPieXjztICFQusWAodJf0DjSibHA" >  <span class="video-thumb  yt-thumb yt-thumb-370 yt-thumb-fluid"
+    >
+    <span class="yt-thumb-default">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" width="370" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" alt="" data-ytimg="1" src="//i.ytimg.com/vi/xLXBTlPf1dg/hqdefault.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</a>    <span class="video-time" aria-hidden="true">3:24</span>
+  <span class="thumb-menu dark-overflow-action-menu video-actions">
+    <button onclick=";return false;" class="yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" type="button" aria-haspopup="true" aria-expanded="false" ><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid"><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item" data-action="play-next" onclick=";return false;"  data-video-ids="xLXBTlPf1dg"><span class="addto-watch-queue-menu-text">播放下一部</span></li><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-now yt-uix-button-menu-item" data-action="play-now" onclick=";return false;"  data-video-ids="xLXBTlPf1dg"><span class="addto-watch-queue-menu-text">立即播放</span></li></ul></button>
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button yt-uix-tooltip" type="button" onclick=";return false;" title="稍後觀看" role="button" data-video-ids="xLXBTlPf1dg"></button>
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip" type="button" onclick=";return false;" title="候播清單" data-video-ids="xLXBTlPf1dg" data-style="tv-queue"></button>
+</span>
+        <a class="lohp-video-link max-line-3 yt-uix-sessionlink  spf-link  yt-ui-ellipsis yt-ui-ellipsis-3" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEUQ0h4YACITCJrPieXjztICFQusWAodJf0DjSibHA" href="/watch?v=xLXBTlPf1dg" title="2017 - 恐怖視頻">2017 - 恐怖視頻</a>
+      </div>
+
+        <div class="lohp-video-metadata" >
+              <span class="content-uploader lohp-video-metadata-item  spf-link ">
+<span class="username-prepend">頻道建立者：</span><a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA" class="g-hovercard yt-uix-sessionlink yt-user-name " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA" dir="ltr" data-ytid="UCd4MIYh2aegsjgFPDBfjpjA" data-name="" aria-label="前往想不到★的使用者頁面
+">想不到★</a>
+    </span>
+
+            <span class="view-count lohp-video-metadata-item">
+      觀看次數：5
+  </span>
+
+              <span class="content-item-time-created lohp-video-metadata-item" title="5 天前">
+      5 天前
+    </span>
+
+        </div>
+  </div>
+
+      </div>
+      <div class="lohp-medium-shelves-container">
+                <div class="lohp-medium-shelf vve-check  spf-link " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CEcQ0h4YASITCJrPieXjztICFQusWAodJf0DjSibHA">
+    
+      <div class="vve-check"
+             data-visibility-tracking="CBMQ0h4YACITCJrPieXjztICFQusWAodJf0DjSibHEDE6IDg9Z-z1Cg="
+           >
+        <div class="lohp-media-object">
+          <span class="lohp-thumb-wrap ux-thumb-wrap contains-addto"><a href="/watch?v=KKjM_1wANEQ" class="yt-uix-sessionlink yt-fluid-thumb-link" aria-hidden="true"  data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEcQ0h4YASITCJrPieXjztICFQusWAodJf0DjSibHA" >  <span class="video-thumb  yt-thumb yt-thumb-170 yt-thumb-fluid"
+    >
+    <span class="yt-thumb-default">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" width="170" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" alt="" data-ytimg="1" src="//i.ytimg.com/vi/KKjM_1wANEQ/mqdefault.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</a>    <span class="video-time" aria-hidden="true">6:02</span>
+  <span class="thumb-menu dark-overflow-action-menu video-actions">
+    <button onclick=";return false;" class="yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" type="button" aria-haspopup="true" aria-expanded="false" ><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid"><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item" data-action="play-next" onclick=";return false;"  data-video-ids="KKjM_1wANEQ"><span class="addto-watch-queue-menu-text">播放下一部</span></li><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-now yt-uix-button-menu-item" data-action="play-now" onclick=";return false;"  data-video-ids="KKjM_1wANEQ"><span class="addto-watch-queue-menu-text">立即播放</span></li></ul></button>
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button yt-uix-tooltip" type="button" onclick=";return false;" title="稍後觀看" role="button" data-video-ids="KKjM_1wANEQ"></button>
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip" type="button" onclick=";return false;" title="候播清單" data-video-ids="KKjM_1wANEQ" data-style="tv-queue"></button>
+</span>
+        </div>
+        <div class="lohp-media-object-content lohp-medium-shelf-content">
+          <a class="lohp-video-link max-line-2 yt-uix-sessionlink  spf-link  yt-ui-ellipsis yt-ui-ellipsis-2" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEcQ0h4YASITCJrPieXjztICFQusWAodJf0DjSibHA" href="/watch?v=KKjM_1wANEQ" title="靈異短片3">靈異短片3</a>
+          <div class="lohp-video-metadata attached">
+                <span class="content-uploader   spf-link ">
+<span class="username-prepend">頻道建立者：</span><a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA" class="g-hovercard yt-uix-sessionlink yt-user-name " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA" dir="ltr" data-ytid="UCd4MIYh2aegsjgFPDBfjpjA" data-name="" aria-label="前往想不到★的使用者頁面
+">想不到★</a>
+    </span>
+
+          </div>
+            <div class="lohp-video-metadata">
+                <span class="view-count ">
+      觀看次數：49
+  </span>
+
+                  <span class="content-item-time-created " title="1 個月前">
+      1 個月前
+    </span>
+
+            </div>
+        </div>
+      </div>
+  </div>
+
+                <div class="lohp-medium-shelf vve-check  spf-link " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CEkQ0h4YAiITCJrPieXjztICFQusWAodJf0DjSibHA">
+    
+      <div class="vve-check"
+             data-visibility-tracking="CBIQ0h4YASITCJrPieXjztICFQusWAodJf0DjSibHEDEnsX3-N2I4ccB"
+           >
+        <div class="lohp-media-object">
+          <span class="lohp-thumb-wrap ux-thumb-wrap contains-addto"><a href="/watch?v=x8Ii747xT0Q" class="yt-uix-sessionlink yt-fluid-thumb-link" aria-hidden="true"  data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEkQ0h4YAiITCJrPieXjztICFQusWAodJf0DjSibHA" >  <span class="video-thumb  yt-thumb yt-thumb-170 yt-thumb-fluid"
+    >
+    <span class="yt-thumb-default">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" width="170" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" alt="" data-ytimg="1" src="//i.ytimg.com/vi/x8Ii747xT0Q/mqdefault.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</a>    <span class="video-time" aria-hidden="true">4:01</span>
+  <span class="thumb-menu dark-overflow-action-menu video-actions">
+    <button onclick=";return false;" class="yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" type="button" aria-haspopup="true" aria-expanded="false" ><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid"><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item" data-action="play-next" onclick=";return false;"  data-video-ids="x8Ii747xT0Q"><span class="addto-watch-queue-menu-text">播放下一部</span></li><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-now yt-uix-button-menu-item" data-action="play-now" onclick=";return false;"  data-video-ids="x8Ii747xT0Q"><span class="addto-watch-queue-menu-text">立即播放</span></li></ul></button>
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button yt-uix-tooltip" type="button" onclick=";return false;" title="稍後觀看" role="button" data-video-ids="x8Ii747xT0Q"></button>
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip" type="button" onclick=";return false;" title="候播清單" data-video-ids="x8Ii747xT0Q" data-style="tv-queue"></button>
+</span>
+        </div>
+        <div class="lohp-media-object-content lohp-medium-shelf-content">
+          <a class="lohp-video-link max-line-2 yt-uix-sessionlink  spf-link  yt-ui-ellipsis yt-ui-ellipsis-2" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEkQ0h4YAiITCJrPieXjztICFQusWAodJf0DjSibHA" href="/watch?v=x8Ii747xT0Q" title="靈異短片1">靈異短片1</a>
+          <div class="lohp-video-metadata attached">
+                <span class="content-uploader   spf-link ">
+<span class="username-prepend">頻道建立者：</span><a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA" class="g-hovercard yt-uix-sessionlink yt-user-name " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA" dir="ltr" data-ytid="UCd4MIYh2aegsjgFPDBfjpjA" data-name="" aria-label="前往想不到★的使用者頁面
+">想不到★</a>
+    </span>
+
+          </div>
+            <div class="lohp-video-metadata">
+                <span class="view-count ">
+      觀看次數：32
+  </span>
+
+                  <span class="content-item-time-created " title="2 個月前">
+      2 個月前
+    </span>
+
+            </div>
+        </div>
+      </div>
+  </div>
+
+                <div class="lohp-medium-shelf vve-check  spf-link " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CEsQ0h4YAyITCJrPieXjztICFQusWAodJf0DjSibHA">
+    
+      <div class="vve-check"
+             data-visibility-tracking="CBEQ0h4YAiITCJrPieXjztICFQusWAodJf0DjSibHEC1hvfl3dL-5_EB"
+           >
+        <div class="lohp-media-object">
+          <span class="lohp-thumb-wrap ux-thumb-wrap contains-addto"><a href="/watch?v=8c_6ldy9wzU" class="yt-uix-sessionlink yt-fluid-thumb-link" aria-hidden="true"  data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEsQ0h4YAyITCJrPieXjztICFQusWAodJf0DjSibHA" >  <span class="video-thumb  yt-thumb yt-thumb-170 yt-thumb-fluid"
+    >
+    <span class="yt-thumb-default">
+      <span class="yt-thumb-clip">
+        
+  <img aria-hidden="true" width="170" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" alt="" data-ytimg="1" src="//i.ytimg.com/vi/8c_6ldy9wzU/mqdefault.jpg" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</a>    <span class="video-time" aria-hidden="true">13:07</span>
+  <span class="thumb-menu dark-overflow-action-menu video-actions">
+    <button onclick=";return false;" class="yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" type="button" aria-haspopup="true" aria-expanded="false" ><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid"><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item" data-action="play-next" onclick=";return false;"  data-video-ids="8c_6ldy9wzU"><span class="addto-watch-queue-menu-text">播放下一部</span></li><li role="menuitem" class="overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-now yt-uix-button-menu-item" data-action="play-now" onclick=";return false;"  data-video-ids="8c_6ldy9wzU"><span class="addto-watch-queue-menu-text">立即播放</span></li></ul></button>
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button yt-uix-tooltip" type="button" onclick=";return false;" title="稍後觀看" role="button" data-video-ids="8c_6ldy9wzU"></button>
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip" type="button" onclick=";return false;" title="候播清單" data-video-ids="8c_6ldy9wzU" data-style="tv-queue"></button>
+</span>
+        </div>
+        <div class="lohp-media-object-content lohp-medium-shelf-content">
+          <a class="lohp-video-link max-line-2 yt-uix-sessionlink  spf-link  yt-ui-ellipsis yt-ui-ellipsis-2" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;feature=c4-overview&amp;ved=CEsQ0h4YAyITCJrPieXjztICFQusWAodJf0DjSibHA" href="/watch?v=8c_6ldy9wzU" title="(寵物)貓咪玩耍">(寵物)貓咪玩耍</a>
+          <div class="lohp-video-metadata attached">
+                <span class="content-uploader   spf-link ">
+<span class="username-prepend">頻道建立者：</span><a href="/channel/UCd4MIYh2aegsjgFPDBfjpjA" class="g-hovercard yt-uix-sessionlink yt-user-name " data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA" dir="ltr" data-ytid="UCd4MIYh2aegsjgFPDBfjpjA" data-name="" aria-label="前往想不到★的使用者頁面
+">想不到★</a>
+    </span>
+
+          </div>
+            <div class="lohp-video-metadata">
+                <span class="view-count ">
+      觀看次數：25
+  </span>
+
+                  <span class="content-item-time-created " title="5 個月前">
+      5 個月前
+    </span>
+
+            </div>
+        </div>
+      </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-container">
+  </div>
+  
+
+  </div>
+
+
+
+  </div>
+
+        <div class="c4-module-editor-actions">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-c4-view-action yt-uix-button-empty yt-uix-button-has-icon no-icon-markup yt-uix-inlineedit-edit c4-visible-on-hover c4-button-opacity c4-editor-edit" type="button" onclick=";return false;" aria-label="編輯"></button>
+
+  </div>
+
+
+  </div>
+
+    </div>
+    <div class="yt-uix-inlineedit-form-container">
+          <form action="/channels_spotlight_ajax?action_update_welcome=1" class="yt-uix-inlineedit-form c4-module-editor-form c4-welcome-editor-form" method="post">
+      <div class="c4-spotlight-module-component featured-content" id="c4-featured-content">
+          <div class="c4-featured-content-editor branded-page-box clearfix">
+    <p class="yt c4-featured-content-notes">
+選擇要顯示在頻道頁面上的精選影片或播放清單。
+    </p>
+    <p class="yt c4-featured-content-notes byline">
+注意：現場直播進行時，系統不會顯示精選內容。
+    </p>
+    <div class="c4-featured-content-columns-container">
+      <div class="c4-featured-content-columns">
+        <div class="c4-featured-content-column ">
+          <div class="c4-featured-content-preview">
+              <button class="yt-uix-button yt-uix-button-size-large yt-uix-button-primary open-featured-content-picker" type="button" onclick=";return false;" data-ajax-action="get_featured_video_picker_dialog"><span class="yt-uix-button-content">精選內容</span></button>
+          </div>
+          <div class="c4-featured-content-confirm-dialog-container">
+          </div>
+            <label class="sync-to-ivp-label">
+              <span class="yt-uix-form-input-checkbox-container "><input type="checkbox" class="yt-uix-form-input-checkbox" name="sync_to_ivp"><span class="yt-uix-form-input-checkbox-element"></span></span>
+              同時顯示在我的所有上傳內容中。
+            </label>
+        </div>
+        <div class="c4-featured-content-column">
+          <div class="default-content-title-container">
+            <h3 class="default-content-title">
+預設內容
+            </h3>
+              <span class="yt-uix-hovercard" data-uix-hovercard-delay-show="100" data-uix-hovercard-delay-hide="100">
+    <span class="yt-uix-hovercard-target" data-position="bottomright">
+      <span class="question-mark-icon yt-sprite"></span>
+    </span>
+    <span class="yt-uix-hovercard-content">
+      <p>
+在觀眾已看過精選內容，或擁有者未選取任何內容的情況下顯示。
+      </p>
+    </span>
+  </span>
+
+          </div>
+            <div class="yt-uix-form-select-fluid default-content-type-select">
+    <span class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span><span class="yt-uix-form-input-select-value"></span></span><select class="yt-uix-form-input-select-element " name="welcome_default_content_type">      <option value="1" selected>近期上傳</option>
+      <option value="2">近期活動</option>
+</select></span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+      <div class="yt-video-picker featured-content-video-picker" >
+    <input type="hidden" name="featured_video_url" class="yt-video-picker-url-hidden-input">
+    <input type="hidden" name="featured_video_item_id" class="yt-video-picker-item-id-hidden-input">
+    <input type="hidden" name="featured_playlist_item_id" class="yt-video-picker-playlist-item-id-hidden-input">
+    <div class="yt-alert yt-alert-default yt-alert-error hid yt-video-picker-error-template">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert"></div><div class="yt-alert-buttons"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-close close yt-uix-close" type="button" onclick=";return false;" aria-label="關閉" data-close-parent-class="yt-alert"><span class="yt-uix-button-content">關閉</span></button></div></div>
+    <div class="yt-video-picker-dialog">
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+            <div class="yt-dialog-header">
+                  <h2 class="yt-dialog-title" role="alert">
+       
+  </h2>
+
+            </div>
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+            
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+<div class="yt-dialog-footer">  <div class="yt-uix-overlay-actions">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default   yt-dialog-dismiss" type="button" onclick=";return false;" data-action="cancel"><span class="yt-uix-button-content">取消</span></button>
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-dialog-save" type="button" onclick=";return false;" data-action="save"><span class="yt-uix-button-content">儲存</span></button>
+  </div>
+</div>        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+      <div class="c4-module-editor-actions ">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default c4-module-editor-cancel" type="reset" onclick=";return true;"><span class="yt-uix-button-content">取消</span></button>
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default c4-module-editor-submit" type="submit" onclick=";return true;"><span class="yt-uix-button-content">完成</span></button>
+  </div>
+
+  </div>
+
+      </div>
+    </form>
+
+    </div>
+    <div class="yt-uix-inlineedit-loading-overlay"></div>
+  </div>
+
+    </div>
+    <div class="c4-spotlight-module-component c4-visible-on-hover-container c4-module-is-editable upsell hid" id="c4-upsell-preview" role="tabpanel">
+        <form action="/channels_spotlight_ajax?action_update_upsell=1" method="post" class="c4-upsell-editor-form">
+      <div class="yt-video-picker upsell-video-picker"  data-hide-dialog-after-save="True">
+    <input type="hidden" name="upsell_video_url" class="yt-video-picker-url-hidden-input">
+    <input type="hidden" name="upsell_video_item_id" class="yt-video-picker-item-id-hidden-input">
+    <input type="hidden" name="upsell_playlist_item_id" class="yt-video-picker-playlist-item-id-hidden-input">
+    <div class="yt-alert yt-alert-default yt-alert-error hid yt-video-picker-error-template">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert"></div><div class="yt-alert-buttons"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-close close yt-uix-close" type="button" onclick=";return false;" aria-label="關閉" data-close-parent-class="yt-alert"><span class="yt-uix-button-content">關閉</span></button></div></div>
+    <div class="yt-video-picker-dialog">
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+            <div class="yt-dialog-header">
+                  <h2 class="yt-dialog-title" role="alert">
+       
+  </h2>
+
+            </div>
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+            
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+<div class="yt-dialog-footer">  <div class="yt-uix-overlay-actions">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default   yt-dialog-dismiss" type="button" onclick=";return false;" data-action="cancel"><span class="yt-uix-button-content">取消</span></button>
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-dialog-save" type="button" onclick=";return false;" data-action="save"><span class="yt-uix-button-content">儲存</span></button>
+  </div>
+</div>        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+        <div class="video-player-view-component branded-page-box clearfix" id="upsell-promo">
+      <div class="c4-player-container  c4-flexible-player-container">
+      <div class="c4-flexible-height-setter"></div>
+      <div class="empty-upsell-video-content yt-valign c4-flexible-player-box">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon no-icon-markup yt-valign-container open-upsell-video-picker c4-editor-plus" type="button" onclick=";return false;"><span class="yt-uix-button-content">頻道宣傳短片</span></button>
+    <div class="player-bar-lower">
+      <img src="/yts/img/channels/c4/player_bar_lower-vfl9414K1.png" alt="">
+    </div>
+  </div>
+
+  </div>
+
+    <div class="empty-upsell-messages">
+      <h2>
+歡迎未訂閱的訪客瀏覽您的頻道
+      </h2>
+      <p>
+尚未訂閱的使用者可藉此瞭解您的頻道內容。
+      </p>
+      <p>
+請盡量維持內容簡潔，並將長度限制在一分鐘之內。查看這些<a target="_blank" href="//www.youtube.com/yt/playbook/channel-optimization.html#channeltrailer">最佳做法</a>或許能為您帶來一些靈感。
+      </p>
+    </div>
+  </div>
+
+  </form>
+
+    </div>
+  </div>
+
+      </li>
+        <li id="c4-shelves-container" class="yt-uix-orderedlist yt-uix-orderedlist-animation">
+  </li>
+
+        <li class="c4-empty-shelf-container">
+    
+  <div class="yt-uix-inlineedit yt-uix-flipwidget-front-side yt-uix-flipwidget " >
+    <div class="yt-uix-inlineedit-view-container yt-uix-flipwidget-front">
+        <div class="c4-empty-module branded-page-box ">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon no-icon-markup yt-uix-inlineedit-edit  c4-editor-plus" type="button" onclick=";return false;"><span class="yt-uix-button-content">新增版面</span></button>
+  </div>
+
+    </div>
+    <div class="yt-uix-inlineedit-form-container yt-uix-flipwidget-back">
+      
+  <form action="/channels_shelves_ajax?action_new_shelf=1" method="post" class="yt-uix-inlineedit-form c4-shelf-form c4-module-editor-form branded-page-box  c4-shelf-form-playlist-dropdown-selected">
+    <input type="hidden" class="c4-shelf-id" name="shelf_id" value="">
+    <div class="c4-module-editor-form-error">
+    </div>
+    <div class="yt-alert yt-alert-default yt-alert-error hid shelf-form-error-template c4-module-editor-form-error-alert">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert"></div><div class="yt-alert-buttons"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-close close yt-uix-close" type="button" onclick=";return false;" aria-label="關閉" data-close-parent-class="yt-alert"><span class="yt-uix-button-content">關閉</span></button></div></div>
+    <div class="c4-shelf-form-header clearfix">
+      <div class="c4-shelf-form-header-controls">
+        <div class="c4-shelf-form-input-list">
+              <div class=" c4-shelf-form-input-list-item clearfix">
+    <label>
+      <span class="c4-shelf-label-text yt-uix-form-label ">內容</span>
+            <div class="yt-uix-form-select-fluid ">
+    <span class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span><span class="yt-uix-form-input-select-value"></span></span><select class="yt-uix-form-input-select-element c4-shelf-content-type-input" name="shelf_type_id">        <option value=""
+selected 
+
+
+
+
+>
+    選取內容
+  </option>
+
+      <optgroup label="影片">
+          <option value="101"
+
+
+
+
+
+>
+    熱門上傳影片
+  </option>
+
+          <option value="102"
+
+
+
+
+
+>
+    上傳
+  </option>
+
+          <option value="103"
+
+
+
+
+
+>
+    喜歡的影片
+  </option>
+
+          <option value="154"
+
+
+
+
+
+>
+    最近發佈的影片
+  </option>
+
+          <option value="108"
+
+
+
+
+
+>
+    直播中
+  </option>
+
+          <option value="109"
+
+
+
+
+
+>
+    即將播送的直播影片
+  </option>
+
+          <option value="110"
+
+
+
+
+
+>
+    先前的直播影片
+  </option>
+
+      </optgroup>
+      <optgroup label="播放清單">
+          <option value="104"
+
+
+
+
+
+>
+    已建立的播放清單
+  </option>
+
+          <option value="100"
+
+data-duplicates-allowed="True"
+data-single-playlist-shelf="True" 
+
+
+>
+    單一播放清單
+  </option>
+
+          <option value="153"
+
+
+
+
+
+>
+    儲存的播放清單
+  </option>
+
+          <option value="151"
+
+data-duplicates-allowed="True"
+
+
+data-multi-playlist-shelf="True" 
+>
+    多份播放清單
+  </option>
+
+          <option value="155"
+
+
+
+
+
+>
+    最近發佈的播放清單
+  </option>
+
+      </optgroup>
+      <optgroup label="頻道">
+          <option value="156"
+
+
+
+
+
+>
+    訂閱內容
+  </option>
+
+          <option value="139"
+
+data-duplicates-allowed="True"
+
+
+
+data-multi-channel-shelf="True" >
+    自訂分組
+  </option>
+
+      </optgroup>
+      <optgroup label="其他">
+          <option value="106"
+
+
+
+
+
+>
+    近期活動
+  </option>
+
+          <option value="105"
+
+
+
+
+
+>
+    近期發佈的內容
+  </option>
+
+      </optgroup>
+</select></span>
+  </div>
+
+    </label>
+  </div>
+
+
+    <div class=" c4-shelf-form-input-list-item clearfix">
+    <label>
+      <span class="c4-shelf-label-text yt-uix-form-label ">版面配置</span>
+            <div class="yt-uix-form-select-fluid ">
+    <span class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span><span class="yt-uix-form-input-select-value"></span></span><select class="yt-uix-form-input-select-element c4-shelf-layout-input" name="shelf_style">    <option value="200" >
+      橫向排列
+    </option>
+    <option value="210" >
+      垂直清單
+    </option>
+</select></span>
+  </div>
+
+    </label>
+  </div>
+
+
+        </div>
+          <div class="c4-shelf-form-playlist-inputs">
+    <div class="c4-shelf-form-input-list">
+
+
+        <div class=" c4-shelf-form-input-list-item clearfix">
+    <label>
+      <span class="c4-shelf-label-text yt-uix-form-label ">選擇播放清單</span>
+            <div class="yt-uix-form-select-fluid ">
+    <span class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span><span class="yt-uix-form-input-select-value"></span></span><select class="yt-uix-form-input-select-element c4-shelf-playlist-entry-type-input">  <option value="1" selected data-playlist-dropdown-entry="True">
+我的播放清單
+  </option>
+  <option value="2"  data-playlist-url-entry="True">
+輸入播放清單網址
+  </option>
+</select></span>
+  </div>
+
+    </label>
+  </div>
+
+
+        <div class="c4-shelf-playlist-dropdown-input c4-shelf-form-input-list-item clearfix">
+    <label>
+      <span class="c4-shelf-label-text yt-uix-form-label empty-text"></span>
+    </label>
+          <div class="yt-comboboxinput fluid-width">
+    <div class="yt-uix-menu yt-uix-comboboxinput-menu" >  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-combobox-dropdown-button yt-uix-menu-trigger" type="button" onclick=";return false;" aria-pressed="false" role="button" aria-haspopup="true" aria-label="Action menu." data-default-button-text="尋找播放清單..."><span class="yt-uix-button-content">尋找播放清單...</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+<div class="yt-uix-menu-content yt-ui-menu-content yt-uix-menu-content-hidden" role="menu">  <div  class="yt-uix-focustrap yt-combobox-menu yt-uix-comboboxinput yt-comboboxinput-menu loading"  data-search-ajax-url="/playlist_ajax?action_picker_search_playlist=1">
+    <div class="yt-combobox-search-container yt-combobox-menu-gutter-padding">
+      <span class=" yt-uix-form-input-container yt-uix-form-input-text-container  yt-uix-form-input-fluid-container"><span class=" yt-uix-form-input-fluid"><input class="yt-uix-form-input-text yt-combobox-search-input yt-uix-comboboxinput-search-input" placeholder="尋找播放清單..."></span></span>
+    </div>
+    <div class="yt-combobox-menu-panel">
+      <div class="yt-combobox-menu-notifications yt-combobox-menu-gutter-padding">
+        <div class="yt-alert yt-alert-naked yt-alert-error hid error-small-template">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert"></div></div>
+        <div class="yt-alert yt-alert-naked yt-alert-success hid success-small-template">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert"></div></div>
+      </div>
+      <div class="loading-container">
+          <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+      </div>
+      <div class="yt-combobox-menu-content">
+        
+      </div>
+    </div>
+    <div class="yt-uix-focustrap-trap" tabindex="0"></div>
+  </div>
+</div></div>
+    <input class="yt-comboboxinput-input" type="hidden" name="shelf_playlist_id" value="">
+  </div>
+
+  </div>
+
+
+        <div class="c4-shelf-playlist-url-input c4-shelf-form-input-list-item clearfix">
+    <label>
+      <span class="c4-shelf-label-text yt-uix-form-label empty-text"></span>
+          <span class="playlist-url-form-input-container yt-uix-form-input-container yt-uix-form-input-text-container  yt-uix-form-input-fluid-container"><span class=" yt-uix-form-input-fluid"><input class="yt-uix-form-input-text " name="shelf_playlist_url" value="" placeholder="輸入播放清單網址"></span></span>
+    </label>
+  </div>
+
+    </div>
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon no-icon-markup c4-shelf-playlist-url-button c4-editor-plus" type="button" onclick=";return false;"><span class="yt-uix-button-content">新增</span></button>
+  </div>
+
+          <div class="c4-shelf-form-multi-channel-inputs">
+    <div class="c4-shelf-form-input-list">
+          <div class=" c4-shelf-form-input-list-item clearfix">
+    <label aria-label="頻道選項 新增頻道">
+      <span class="c4-shelf-label-text yt-uix-form-label ">頻道選項</span>
+            
+  <div class="yt-uix-overlay " >
+    <span class="  yt-uix-overlay-target"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon add-channels-button" type="button" onclick=";return false;" aria-haspopup="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-popout yt-sprite"></span></span><span class="yt-uix-button-content">新增頻道</span></button></span>
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+            <div class="yt-dialog-header">
+                  <h2 class="yt-dialog-title" role="alert">
+       
+  </h2>
+
+            </div>
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+            
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+    </label>
+  </div>
+
+    </div>
+  </div>
+
+          <div class="c4-shelf-form-multi-playlist-inputs">
+    <div class="c4-shelf-form-input-list">
+          <div class=" c4-shelf-form-input-list-item clearfix">
+    <label aria-label="播放清單選項 - 新增播放清單">
+      <span class="c4-shelf-label-text yt-uix-form-label ">播放清單選項</span>
+            
+  <div class="yt-uix-overlay " >
+    <span class="  yt-uix-overlay-target"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon add-playlists-button" type="button" onclick=";return false;"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-popout yt-sprite"></span></span><span class="yt-uix-button-content">新增播放清單</span></button></span>
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+            <div class="yt-dialog-header">
+                  <h2 class="yt-dialog-title" role="alert">
+       
+  </h2>
+
+            </div>
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+            
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+    </label>
+  </div>
+
+    </div>
+  </div>
+
+          <div class="c4-shelf-form-single-show-inputs">
+    <div class="c4-shelf-form-input-list">
+
+        <div class=" c4-shelf-form-input-list-item clearfix">
+    <label>
+      <span class="c4-shelf-label-text yt-uix-form-label ">選擇節目</span>
+            <div class="yt-uix-form-select-fluid ">
+    <span class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span><span class="yt-uix-form-input-select-value"></span></span><select class="yt-uix-form-input-select-element c4-shelf-single-show-entry-type-input" name="shelf_source_channel_id"></select></span>
+  </div>
+
+    </label>
+  </div>
+
+    </div>
+  </div>
+
+      </div>
+        <div class="c4-module-editor-actions ">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default c4-module-editor-cancel" type="reset" onclick=";return true;"><span class="yt-uix-button-content">取消</span></button>
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary c4-module-editor-submit" type="submit" onclick=";return true;"><span class="yt-uix-button-content">完成</span></button>
+  </div>
+
+    </div>
+      <div class="c4-shelf-preview-container  hid">
+    <h3 class="c4-shelf-label-text yt-uix-form-label">
+預覽
+    </h3>
+    <div class="c4-shelf-preview-container-content">
+          <div class="c4-shelf-preview"></div>
+
+      <div class="preview-click-guard"></div>
+    </div>
+  </div>
+
+  </form>
+
+    </div>
+    <div class="yt-uix-inlineedit-loading-overlay"></div>
+  </div>
+
+  </li>
+
+
+    </ul>
+
+
+      
+    <img class="hid" src="https://www.youtube.com/pagead/viewthroughconversion/962985656/?backend=innertube&amp;cname=1&amp;cver=1_20170307&amp;data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D1_20170307%3Bptype%3Dcview%3Btype%3Dcview%3Butuid%3Dd4MIYh2aegsjgFPDBfjpjA&amp;foc_id=d4MIYh2aegsjgFPDBfjpjA&amp;label=followon_cvisit&amp;ptype=cview" border="0" width="1" height="1">
+
+
+
+
+  </div>
+
+          </div>
+        </div>
+          <div class="branded-page-v2-secondary-col">
+                        <div id="other-channels-sidebar-container">
+      <div class="branded-page-related-channels branded-page-box c4-module-is-editable c4-visible-on-hover-container yt-card" id="other-channels-sidebar">
+          <h2 class="branded-page-module-title" >
+        精選頻道
+    </h2>
+
+        
+  <div class="yt-uix-overlay featured-content-picker-overlay" >
+    <span class="  yt-uix-overlay-target"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default sidebar-add-channels-button" type="button" onclick=";return false;"><span class="yt-uix-button-content">  <span class="plus-sign">
+    +
+  </span>
+新增頻道
+</span></button></span>
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+            <div class="yt-dialog-header">
+                  <h2 class="yt-dialog-title" role="alert">
+       
+  </h2>
+
+            </div>
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+            
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+          <form class="edit-section-form" action="/channels_other_channels_ajax?action_update_other_channels_module=1" method="post">
+    <input type="hidden" name="section_title" value="精選頻道">
+  </form>
+
+  </div>
+
+  </div>
+
+            <div id="related-channels-sidebar-container">
+      <div class="branded-page-related-channels c4-module-is-editable c4-visible-on-hover-container yt-card" id="related-channels-sidebar">
+      <div class="related-channels-editor yt-uix-expander branded-page-box c4-visible-on-hover-container yt-uix-clickcard" data-card-class="related-channels-visibility-message">
+          <h2 class="branded-page-module-title" >
+        YouTube 熱門頻道
+    </h2>
+
+    <form action="/channels_related_channels_ajax?action_update_related_channels_section=1" class="related-channels-visibility-form" method="post">
+        <div class="c4-module-editor-actions">
+    <div class="related-channels-toggle-group yt-uix-expander-head yt-uix-clickcard-target" data-card-target="related-channels-editor-enable-button">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-destructive related-channels-disable-button yt-uix-button-c4-view-action c4-visible-on-hover" type="button" onclick=";return false;" aria-label="YouTube 熱門頻道 - 停用"><span class="yt-uix-button-content">停用</span></button>
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-c4-view-action yt-uix-button-has-icon related-channels-enabled-button" type="button" onclick=";return false;" aria-hidden="true" tabindex="-1"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-light-checkmark yt-sprite"></span></span><span class="yt-uix-button-content">已啟用</span></button>
+    </div>
+  </div>
+  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default related-channels-enable-button yt-uix-expander-head" type="button" onclick=";return false;" id="related-channels-editor-enable-button" aria-label="YouTube 熱門頻道 - 啟用" data-orientation="vertical" data-position="bottomright"><span class="yt-uix-button-content">啟用</span></button>
+
+    </form>
+    <div class="yt-uix-clickcard-content">
+如果選擇不顯示推薦頻道，其他 YouTube 頻道網頁上的推薦頻道部分也不會顯示您的頻道。
+    </div>
+    <div class="yt-uix-expander-body">
+      
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div></div></div></div>  <div id="footer-container" class="yt-base-gutter force-layer"><div id="footer"><div id="footer-main"><div id="footer-logo"><a href="/" id="footer-logo-link" title="YouTube 首頁" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA&amp;ved=CAIQpmEiEwiaz4nl487SAhULrFgKHSX9A40omxw" class="yt-uix-sessionlink"><span class="footer-logo-icon yt-sprite"></span></a></div>  <ul class="pickers yt-uix-button-group" data-button-toggle-group="optional">
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon" type="button" onclick=";return false;" id="yt-picker-language-button" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-picker-position="footer" data-picker-key="language" data-button-toggle="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-language yt-sprite"></span></span><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+語言：
+  </span>
+  中文
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-country-button" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-picker-position="footer" data-picker-key="country" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+內容位置：
+  </span>
+  台灣
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-safetymode-button" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-picker-position="footer" data-picker-key="safetymode" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+嚴格篩選模式：
+  </span>
+關閉
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+  </ul>
+<a href="/feed/history" class="yt-uix-button  footer-history yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-sessionlink="ei=ZxnEWNr_GYvY4gKl-o_oCA"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite"></span></span><span class="yt-uix-button-content">觀看紀錄</span></a>    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse yt-google-help-link inq-no-click " type="button" onclick=";return false;" id="google-help" data-ghelp-tracking-param="" data-ghelp-anchor="google-help" data-feedback-product-id="59" data-load-chat-support=""><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite"></span></span><span class="yt-uix-button-content">說明
+</span></button>
+      <div id="yt-picker-language-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-country-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-safetymode-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+</div><div id="footer-links"><ul id="footer-links-primary">  <li><a href="//www.youtube.com/yt/about/zh-TW/">關於</a></li>
+  <li><a href="//www.youtube.com/yt/press/zh-TW/">新聞中心</a></li>
+  <li><a href="//www.youtube.com/yt/copyright/zh-TW/">版權</a></li>
+  <li><a href="//www.youtube.com/yt/creators/">創作者</a></li>
+  <li><a href="//www.youtube.com/yt/advertise/">廣告</a></li>
+  <li><a href="//www.youtube.com/yt/dev/zh-TW/">開發人員</a></li>
+  <li><a href="https://plus.google.com/+youtube" dir="ltr">+YouTube</a></li>
+</ul><ul id="footer-links-secondary">  <li><a href="/t/terms">條款</a></li>
+  <li><a href="https://www.google.com.tw/intl/zh-TW/policies/privacy/">隱私權</a></li>
+  <li><a href="//www.youtube.com/yt/policyandsafety/zh-TW/">
+政策與安全性
+  </a></li>
+  <li><a href="//support.google.com/youtube/?hl=zh-TW" onclick="return yt.www.feedback.start(59);" class="reportbug">提供意見</a></li>
+  <li>
+    <a href="/testtube">測試新功能</a>
+  </li>
+  <li></li>
+</ul></div></div></div>
+
+
+      <div class="yt-dialog hid " id="feed-privacy-lb">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+載入中…
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div id="feed-privacy-dialog">
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        處理中...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="hidden-component-template-wrapper" class="hid"><div id="yt-uix-videoactionmenu-menu" class="yt-ui-menu-content">  <div class="hide-on-create-pl-panel">
+    <h3>
+新增至
+    </h3>
+  </div>
+  <div class="add-to-widget">
+      <p class="yt-spinner ">
+        <span title="正在載入圖示" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        正在載入播放清單...
+    </span>
+  </p>
+
+  </div>
+</div></div>    <script>var ytspf = ytspf || {};ytspf.enabled = true;ytspf.config = {'reload-identifier': 'spfreload'};ytspf.config['request-headers'] = {'X-YouTube-Identity-Token': "QUFFLUhqa0ktOTlmVUVXWFFWZlZRRVltTTMzeEtnVlFaZ3w="};ytspf.config['experimental-request-headers'] = ytspf.config['request-headers'];ytspf.config['cache-max'] = 50;ytspf.config['navigate-limit'] = 50;ytspf.config['navigate-lifetime'] = 64800000;ytspf.config['animation-duration'] = 0;</script>
+  <script src="/yts/jsbin/spf-vflWieI3y/spf.js" type="text/javascript" name="spf/spf"></script>
+  <script src="/yts/jsbin/www-en_US-vflZkT0AY/base.js" name="www/base"></script>
+<script>spf.script.path({'www/': '/yts/jsbin/www-en_US-vflZkT0AY/'});var ytdepmap = {"www/base": null, "www/common": "www/base", "www/angular_base": "www/common", "www/channels_accountupload": "www/common", "www/channels": "www/common", "www/dashboard": "www/common", "www/downloadreports": "www/common", "www/experiments": "www/common", "www/feed": "www/common", "www/instant": "www/common", "www/legomap": "www/common", "www/live_chat": "www/common", "www/live_chat_moderation": "www/common", "www/promo_join_network": "www/common", "www/results_harlemshake": "www/common", "www/results": "www/common", "www/results_starwars": "www/common", "www/subscriptionmanager": "www/common", "www/unlimited": "www/common", "www/watch": "www/common", "www/ypc_bootstrap": "www/common", "www/ypc_core": "www/common", "www/channels_edit": "www/channels", "www/live_dashboard": "www/angular_base", "www/videomanager": "www/angular_base", "www/watch_autoplayrenderer": "www/watch", "www/watch_edit": "www/watch", "www/watch_editor": "www/watch", "www/watch_live": "www/watch", "www/watch_promos": "www/watch", "www/watch_speedyg": "www/watch", "www/watch_transcript": "www/watch", "www/watch_videoshelf": "www/watch", "www/ct_advancedsearch": "www/videomanager", "www/my_videos": "www/videomanager"};spf.script.declare(ytdepmap);</script><script>if (window.ytcsi) {window.ytcsi.tick("je", null, '');}</script>  
+
+  <script>
+      yt.setConfig('ANGULAR_JS', "\/yts\/jslib\/angular.min-vfltsfE-b.js");
+  yt.setConfig('TRANSLATIONEDITOR_JS', "\/yts\/jsbin\/www-translationeditor-vflk24-ew\/www-translationeditor.js");
+  yt.setMsg('UNSAVED_CHANGES_WARNING', "您對頻道設定所做的部分變更尚未儲存，如果現在離開頁面，將會失去這些變更。");
+
+      yt.setConfig('CHANNEL_EDITABLE', true);
+
+    yt.setConfig('JS_PAGE_MODULES', ["www\/channels","www\/channels_accountupload","www\/channels_edit","www\/ypc_bootstrap"]);
+
+
+        yt.setMsg({
+    'CP_MAX_ITEM_ERROR': "已超過項目數上限。請移除一些項目。",
+    'CP_DUPLICATE_ITEM_ERROR': "抱歉，這個項目已加入。",
+    'CP_EMPTY_SECTION_TITLE_ERROR': "請提供區段標題。"
+  });
+
+
+
+    yt.setConfig('CHANNEL_ID', "UCd4MIYh2aegsjgFPDBfjpjA");
+
+
+    yt.setConfig('CHANNEL_TAB', "featured");
+
+
+  yt.setConfig('DISMISS_THROUGH_IT', true);
+
+
+      yt.setConfig({
+        'GUIDE_SELECTED_ITEM': "0qDduQFSEhhVQ2Q0TUlZaDJhZWdzamdGUERCZmpwakEaNkVodG5iMjluYkdWaU1HWTNPRFppTW1KbVkyVTJOV1F6TG1oMGJXdzRBV0FCYWdDNEFRQSUzRA%3D%3D"
+      });
+
+      yt.setConfig({
+    'GUIDED_HELP_LOCALE': "zh_TW",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+
+  </script>
+          <script async src="https://www.google-analytics.com/analytics.js" name="ga-analytics"></script><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga('set', 'page', window.location.pathname);ga.l=+new Date;ga('set', 'forceSSL', true);ga('create', "YT-88353741-1", 'auto');ga('send', 'pageview');</script>
+
+
+
+<script>yt.setConfig({INNERTUBE_CONTEXT_CLIENT_VERSION: "1.20170307",INNERTUBE_API_KEY: "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8",APIARY_HOST: "",INNERTUBE_API_VERSION: "v1",APIARY_HOST_FIRSTPARTY: "",INNERTUBE_CONTEXT_CLIENT_NAME: 1,GAPI_HINT_PARAMS: "m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.-QXB_U8R8Eg.O\/m=__features__\/rt=j\/d=1\/rs=AHpOoo8PUrmM-10GgMhjxf52iM2kLRUicg",'VISITOR_DATA': "CgtRaXp4bWppT1gzRQ%3D%3D",'GAPI_HOST': "https:\/\/apis.google.com",'GAPI_LOCALE': "zh_TW",'INNERTUBE_CONTEXT_HL': "zh-TW",'INNERTUBE_CONTEXT_GL': "TW",'XHR_APIARY_HOST': "youtubei.youtube.com"});yt.setConfig({'ROOT_VE_CHILDREN': ["CAEQ7VAiEwiaz4nl487SAhULrFgKHSX9A40omxw","CAIQpmEiEwiaz4nl487SAhULrFgKHSX9A40omxw","CBUQxzEiEwiaz4nl487SAhULrFgKHSX9A40omxw","CBYQwy0YACITCJrPieXjztICFQusWAodJf0DjSibHA","CBcQwy0YASITCJrPieXjztICFQusWAodJf0DjSibHA","CBgQwy0YAiITCJrPieXjztICFQusWAodJf0DjSibHA","CBkQwy0YAyITCJrPieXjztICFQusWAodJf0DjSibHA","CBoQwy0YBCITCJrPieXjztICFQusWAodJf0DjSibHA","CBsQ_h4iEwiaz4nl487SAhULrFgKHSX9A40omxw","CBwQ5isYACITCJrPieXjztICFQusWAodJf0DjSibHA","CB0QtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA","CB4QtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA","CB8QtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA","CCAQtSwYAyITCJrPieXjztICFQusWAodJf0DjSibHA","CCEQtSwYBCITCJrPieXjztICFQusWAodJf0DjSibHA","CCIQtSwYBSITCJrPieXjztICFQusWAodJf0DjSibHA","CCMQ5isYASITCJrPieXjztICFQusWAodJf0DjSibHA","CCQQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA","CCUQtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA","CCYQtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA","CCcQ6zgYAyITCJrPieXjztICFQusWAodJf0DjSibHA","CCgQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA","CCkQtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA","CCoQtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA","CCsQtSwYAyITCJrPieXjztICFQusWAodJf0DjSibHA","CCwQtSwYBCITCJrPieXjztICFQusWAodJf0DjSibHA","CC0QtSwYBSITCJrPieXjztICFQusWAodJf0DjSibHA","CC4QtSwYBiITCJrPieXjztICFQusWAodJf0DjSibHA","CC8QtSwYByITCJrPieXjztICFQusWAodJf0DjSibHA","CDAQtSwYCCITCJrPieXjztICFQusWAodJf0DjSibHA","CDEQtSwiEwiaz4nl487SAhULrFgKHSX9A40omxw","CDIQtSwiEwiaz4nl487SAhULrFgKHSX9A40omxw","CDMQ_x4YAiITCJrPieXjztICFQusWAodJf0DjSibHA","CDQQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA","CDUQtSwYASITCJrPieXjztICFQusWAodJf0DjSibHA","CDYQtSwYAiITCJrPieXjztICFQusWAodJf0DjSibHA","CDcQtSwYAyITCJrPieXjztICFQusWAodJf0DjSibHA","CDgQtSwYBCITCJrPieXjztICFQusWAodJf0DjSibHA","CDkQ5isYAyITCJrPieXjztICFQusWAodJf0DjSibHA","CDoQtSwYACITCJrPieXjztICFQusWAodJf0DjSibHA","CDsQ7S0iEwiaz4nl487SAhULrFgKHSX9A40omxw","CDwQ1zQiEwiaz4nl487SAhULrFgKHSX9A40omxw","CD0QmysiEwiaz4nl487SAhULrFgKHSX9A40omxw","CD4Qwy0iEwiaz4nl487SAhULrFgKHSX9A40omxw","CD8Q3ksiEwiaz4nl487SAhULrFgKHSX9A40omxw","CEAQsDUYACITCJrPieXjztICFQusWAodJf0DjSibHA","CEEQsDUYASITCJrPieXjztICFQusWAodJf0DjSibHA","CEIQySgiEwiaz4nl487SAhULrFgKHSX9A40omxw","CEMQlx4iEwiaz4nl487SAhULrFgKHSX9A40omxw","CEQQ0R4iEwiaz4nl487SAhULrFgKHSX9A40omxw","CEUQ0h4YACITCJrPieXjztICFQusWAodJf0DjSibHA","CEYQmCoiEwiaz4nl487SAhULrFgKHSX9A40omxw","CEcQ0h4YASITCJrPieXjztICFQusWAodJf0DjSibHA","CEgQmCoiEwiaz4nl487SAhULrFgKHSX9A40omxw","CEkQ0h4YAiITCJrPieXjztICFQusWAodJf0DjSibHA","CEoQmCoiEwiaz4nl487SAhULrFgKHSX9A40omxw","CEsQ0h4YAyITCJrPieXjztICFQusWAodJf0DjSibHA","CEwQmCoiEwiaz4nl487SAhULrFgKHSX9A40omxw","CE0Qzh4iEwiaz4nl487SAhULrFgKHSX9A40omxw","CE4Qlx4YASITCJrPieXjztICFQusWAodJf0DjSibHA"],'ROOT_VE_TYPE': 3611});yt.setConfig({'EVENT_ID': "ZxnEWNr_GYvY4gKl-o_oCA",'PAGE_NAME': "channel",'LOGGED_IN': true,'SESSION_INDEX': 0,'VALID_SESSION_TEMPDATA_DOMAINS': ["www.youtube.com","gaming.youtube.com"],'PARENT_TRACKING_PARAMS': "",'FORMATS_FILE_SIZE_JS': ["%s B","%s KB","%s MB","%s GB","%s TB"],'DELEGATED_SESSION_ID': "104209704908190838317",'ONE_PICK_URL': "",'UNIVERSAL_HOVERCARDS': true,'GOOGLEPLUS_HOST': "https:\/\/plus.google.com",'PAGEFRAME_JS': "\/yts\/jsbin\/www-pageframe-vfl32dVqE\/www-pageframe.js",'GAPI_LOADER_URL': "\/yts\/jsbin\/www-gapi-loader-vflfx78yv\/www-gapi-loader.js",'JS_COMMON_MODULE': "\/yts\/jsbin\/www-en_US-vflZkT0AY\/common.js",'PAGE_FRAME_DELAYLOADED_CSS': "\/yts\/cssbin\/www-pageframedelayloaded-webp-vfl-vXZZM.css",'EXPERIMENT_FLAGS': {"cold_load_nav_start_web":true,"clear_web_implicit_clicktracking":true,"comment_deep_link":true,"enable_more_related_ve_logging":true,"service_worker_scope":"\/","desktop_pyv_on_watch_via_valor":true,"gfeedback_for_signed_out_users_enabled":true,"web_logging_max_batch":20,"same_domain_static_resources_desktop":true,"player_swfcfg_cleanup":true,"navigation_only_csi_reset":true,"warm_load_nav_start_web":true,"block_spf_search_ads_impressions":true,"log_window_onerror_fraction":0.1,"enable_server_side_search_pyv":true,"use_push_for_desktop_live_chat":true,"service_worker_push_home_only":true,"consent_url_override":"","enable_youtubei_innertube":true,"autoescape_tempdata_url":true,"service_worker_enabled":true,"autoplay_pause_sampling_fraction":0.0,"web_gel_lact":true,"service_worker_push_prompt_cap":1,"desktop_pyv_on_watch_override_lact":true,"desktop_pyv_on_watch_missing_params":true,"service_worker_push_enabled":true,"chat_smoothing_animations":0},'HIGH_CONTRAST_MODE_CSS': "\/yts\/cssbin\/www-highcontrastmode-webp-vflydT2AH.css",'PREFETCH_CSS_RESOURCES' : ["\/yts\/cssbin\/www-player-webp-vflgjqGEf.css"],'PREFETCH_JS_RESOURCES': ["\/yts\/jsbin\/player-zh_TW-vfl7oKXvj\/base.js"],'PREFETCH_LINKS': false,'PREFETCH_LINKS_MAX': 1,'PREFETCH_AUTOPLAY': false,'PREFETCH_AUTOPLAY_TIME': 0,'PREFETCH_AUTONAV': false,'PREBUFFER_MAX': 1,'PREBUFFER_LINKS': false,'PREBUFFER_AUTOPLAY': false,'PREBUFFER_AUTONAV': false,'WATCH_LATER_BUTTON': "\n\n  \u003cbutton class=\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button yt-uix-tooltip\" type=\"button\" onclick=\";return false;\" title=\"稍後觀看\" role=\"button\" data-video-ids=\"__VIDEO_ID__\"\u003e\u003c\/button\u003e\n",'WATCH_QUEUE_BUTTON': "  \u003cbutton class=\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip\" type=\"button\" onclick=\";return false;\" title=\"候播清單\" data-video-ids=\"__VIDEO_ID__\" data-style=\"tv-queue\"\u003e\u003c\/button\u003e\n",'WATCH_QUEUE_MENU': "  \u003cspan class=\"thumb-menu dark-overflow-action-menu video-actions\"\u003e\n    \u003cbutton onclick=\";return false;\" class=\"yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\" type=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\" \u003e\u003cspan class=\"yt-uix-button-arrow yt-sprite\"\u003e\u003c\/span\u003e\u003cul class=\"watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid\"\u003e\u003cli role=\"menuitem\" class=\"overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item\" data-action=\"play-next\" onclick=\";return false;\"  data-video-ids=\"__VIDEO_ID__\"\u003e\u003cspan class=\"addto-watch-queue-menu-text\"\u003e播放下一部\u003c\/span\u003e\u003c\/li\u003e\u003cli role=\"menuitem\" class=\"overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-now yt-uix-button-menu-item\" data-action=\"play-now\" onclick=\";return false;\"  data-video-ids=\"__VIDEO_ID__\"\u003e\u003cspan class=\"addto-watch-queue-menu-text\"\u003e立即播放\u003c\/span\u003e\u003c\/li\u003e\u003c\/ul\u003e\u003c\/button\u003e\n  \u003c\/span\u003e\n",'SAFETY_MODE_PENDING': false,'I18N_PLURAL_RULES': function(n) { return 'other'; },'ZWIEBACK_PING_URLS': ["https:\/\/www.google.com.tw\/pagead\/lvz?req_ts=1489246567\u0026evtid=AJhsOugbi-Cw_viQ6kTxqCcMD0LKDwAr9gJ83Bi-y7UfIyrlH2N1-1WiwQ0msH1kUxklnO2WgyZlXZGk0E3WNUG58mSFkMlMOw\u0026pg=channel\u0026sigh=AIz_a88EVSsN_SMcLPE38Y08PU-ZVE-C4w"],'LOCAL_DATE_TIME_CONFIG': {"weekendRange":[6,5],"weekdays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"firstWeekCutoffDay":3,"firstDayOfWeek":0,"shortWeekdays":["周日","周一","周二","周三","周四","周五","周六"],"formatShortTime":"H:mm","amPms":null,"months":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],"dateFormats":["yyyy'年'MM'月'dd'日 'H:mm","yyyy'年'MM'月'dd'日'","yyyy'年'MM'月'dd'日'","yyyy'年'MM'月'dd'日'"],"formatLongDateOnly":"yyyy'年'MM'月'dd'日'","formatLongDate":"yyyy'年'MM'月'dd'日 'H:mm","formatWeekdayShortTime":"EE H:mm","formatShortDate":"yyyy'年'MM'月'dd'日'","shortMonths":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]},'PAGE_CL': 149455302,'PAGE_BUILD_LABEL': "youtube_20170307_0_RC2",'VARIANTS_CHECKSUM': "b7300a9a6f2166f5637fd8a67f5476f9",'CLIENT_PROTOCOL': "h2",'CLIENT_TRANSPORT': "quic",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE': true,'FEEDBACK_BUCKET_ID': "Other",'FEEDBACK_LOCALE_LANGUAGE': "zh-TW",'FEEDBACK_LOCALE_EXTRAS': {"accept_language":"zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,zh-CN;q=0.2,ja;q=0.2,zh-HK;q=0.2","experiments":"3300105,3300105,3300134,3300134,3300164,3300164,3313274,3313274,3313321,3313321,9406113,9415398,9416475,9417482,9419979,9420289,9422596,9423555,9428398,9431012,9432939,9433221,9433839,9433870,9434046,9434289,9434949,9438309,9439829,9440054,9441194,9441929,9442387,9442746,9444189,9445634,9446054,9446364,9447856,9448302,9449034,9449243,9449256,9450059,9450260,9450402,9450544,9450707,9450949,9451164,9451783,9451814,9451827,9451937,9452119,9452448,9452833,9452850,9453098,9453167,9453540,9453553,9453682,9454394,9454653,9454837,9454899,9454909,9454976,9455031,9455068,9455655,9455939,9455982,9456133,9456249,9456445,9456629,9456640,9456930,9456955,9457114,9457141,9457169,9457284,9457344,9457492,9457591,9457596,9457598,9457968,9458230,9458240,9458265,9458668,9458703,9458881,9458947,9459067,9459075,9459187,9459429,9459651,9459655,9459762,9459793,9459802,9459959,9460065,9460160,9460196,9460255,9460266,9460295,9460350,9460458,9460554,9460594,9460599,9460611,9460829,9461125,9461452,9461561,9461777,9461880,9462003,9462018,9462032,9462191,9462233,9462359,9462377,9462416,9462474,9462706,9462855,9462907,9462948,9463002,9463004,9463175,9463177,9463251,9463287,9463460,9463470,9463496,9463512,9463664,9463784,9463802,9463809,9463891,9463963,9464040,9464098,9464111,9464207,9464330,9464490,9464626,9464890,9465025,9465284,9465293,9465366,9465534,9465560,9465633,9465676,9465710,9465732,9465737,9465769,9465920,9466137,9466160,9466193","is_partner":true,"logged_in":true}});   yt.setConfig({
+    'GUIDED_HELP_LOCALE': "zh_TW",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+yt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_CREATE_NEW_PLAYLIST': "建立新的播放清單\n",'ADDTO_CREATE_PLAYLIST_DYNAMIC_TITLE': "  $dynamic_title_placeholder (新建)\n",'ADDTO_WATCH_LATER': "Watch Later",'ADDTO_WATCH_LATER_ADDED': "已新增",'ADDTO_WATCH_LATER_ERROR': "錯誤",'ADDTO_WATCH_QUEUE': "Watch Queue",'ADDTO_WATCH_QUEUE_ADDED': "已新增",'ADDTO_WATCH_QUEUE_ERROR': "錯誤",'ADDTO_TV_QUEUE': "Queue",'ADS_INSTREAM_FIRST_PLAY': "正在播放影片廣告。",'ADS_INSTREAM_SKIPPABLE': "您可以略過影片廣告。",'ADS_OVERLAY_IMPRESSION': "廣告放送完畢。",'MASTHEAD_NOTIFICATIONS_LABEL': {"other": "# \u5247\u672a\u8b80\u7684\u901a\u77e5\u3002", "case0": "\u6c92\u6709\u672a\u8b80\u7684\u901a\u77e5\u3002", "case1": "1 \u5247\u672a\u8b80\u7684\u901a\u77e5\u3002"},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS': "99+",'MDX_AUTOPLAY_OFF': '已停用自動播放功能','MDX_AUTOPLAY_ON': '已啟用自動播放功能'});  yt.setConfig('FEED_PRIVACY_CSS_URL', "\/yts\/cssbin\/www-feedprivacydialog-webp-vflR8GqrH.css");
+
+  yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);
+yt.setConfig({'SBOX_JS_URL': "\/yts\/jsbin\/www-searchbox-legacy-vflWv9u_A\/www-searchbox-legacy.js",'SBOX_SETTINGS': {"REQUEST_DOMAIN":"tw","PQ":"","SUGG_EXP_ID":"ytd4_arm_4","REQUEST_LANGUAGE":"zh-TW","IS_FUSION":false,"PSUGGEST_TOKEN":"RMU7P9tFBueQSy4eoWBiSA","HAS_ON_SCREEN_KEYBOARD":false,"SESSION_INDEX":0},'SBOX_LABELS': {"SUGGESTION_DISMISSED_LABEL":"這筆建議已移除","SUGGESTION_DISMISS_LABEL":"移除"}});  yt.setConfig({
+    'YPC_LOADER_JS': "\/yts\/jsbin\/www-ypc-vflAZ80rC\/www-ypc.js",
+    'YPC_LOADER_CSS': "\/yts\/cssbin\/www-ypc-webp-vfl4tl-2E.css",
+    'YPC_SIGNIN_URL': "https:\/\/accounts.google.com\/ServiceLogin?service=youtube\u0026uilel=3\u0026authuser=0\u0026hl=zh-TW\u0026passive=true\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252F%26hl%3Dzh-TW%26authuser%3D0%26app%3Ddesktop%26action_handle_signin%3Dtrue",
+    'DBLCLK_ADVERTISER_ID': "2542116",
+    'DBLCLK_YPC_ACTIVITY_GROUP': "youtu444",
+    'SUBSCRIPTION_URL': "\/subscription_ajax",
+    'YPC_SWITCH_URL': "\/signin?next=%2F\u0026skip_identity_prompt=True\u0026feature=purchases\u0026authuser=0\u0026action_handle_signin=true",
+    'YPC_GB_LANGUAGE': "zh_TW",
+    'YPC_MB_URL': "https:\/\/payments.google.com\/payments\/v4\/js\/integrator.js?ss=md",
+    'YPC_TRANSACTION_URL': "\/transaction_handler",
+    'YPC_SUBSCRIPTION_URL': "\/ypc_subscription_ajax",
+    'YPC_POST_PURCHASE_URL': "\/ypc_post_purchase_ajax",
+    'YTR_FAMILY_CREATION_URL': "https:\/\/families.google.com\/webcreation?usegapi=1",
+    'YTO_GTM_DATA': {'event': 'purchased', 'purchaseStatus': 'success'},
+    'YTO_GTM_1_BUTTON_CLICK_DATA': {'event': 'landingButtonClick', 'buttonPosition': '1'},
+    'YTO_GTM_2_BUTTON_CLICK_DATA': {'event': 'landingButtonClick', 'buttonPosition': '2'}
+  });
+  yt.setMsg({
+    'YPC_OFFER_OVERLAY': "      \u003cdiv id=\"ypc-offer-overlay\" class=\"yt-uix-overlay\"\u003e\n      \u003cspan class=\"yt-uix-overlay-target\"\u003e\u003c\/span\u003e\n          \u003cdiv class=\"yt-dialog hid \"\u003e\n    \u003cdiv class=\"yt-dialog-base\"\u003e\n      \u003cspan class=\"yt-dialog-align\"\u003e\u003c\/span\u003e\n      \u003cdiv class=\"yt-dialog-fg\" role=\"dialog\"\u003e\n        \u003cdiv class=\"yt-dialog-fg-content\"\u003e\n          \u003cdiv class=\"yt-dialog-loading\"\u003e\n              \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n      \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"正在載入圖示\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n載入中…\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-content\"\u003e\n            \u003cdiv class= \"ypc-offer-overlay-container\"\u003e\u003ca href=\"#\" class=\"ypc-offer-overlay-close\" role=\"button\" tabindex=\"0\" aria-label=\"Close\"\u003e\u003c\/a\u003e\u003cdiv class=\"ypc-offer-overlay-content-wrapper clearfix\"\u003e\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-loading\"\u003e  \u003cspan title=\"正在載入圖示\" class=\"yt-material-spinner-img yt-sprite\"\u003e\u003c\/span\u003e\n\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-error\"\u003e\u003ch3\u003e錯誤\u003c\/h3\u003e\u003cp class=\"ypc-offer-overlay-error-generic-content\"\u003e發生錯誤，請稍後再試。\u003c\/p\u003e\u003cp class=\"ypc-offer-overlay-error-custom-content\"\u003e\u003c\/p\u003e\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-not-available-error\"\u003e\u003ch3 class=\"ypc-offer-overlay-not-available-title\"\u003e購買功能無法使用\u003c\/h3\u003e\u003cp class=\"ypc-offer-overlay-not-available-content\"\u003e\u003c\/p\u003e  \u003cdiv class=\"ypc-offer-overlay-not-available-action yt-uix-overlay-actions\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003e關閉\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-tip-not-available-error\"\u003e\u003ch3 class=\"ypc-offer-overlay-not-available-title\"\u003e無法提供經費資助\u003c\/h3\u003e\u003cp class=\"ypc-offer-overlay-tip-not-available-content\"\u003e\u003c\/p\u003e  \u003cdiv class=\"ypc-offer-overlay-not-available-action yt-uix-overlay-actions\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003e關閉\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\u003c\/div\u003e\u003cdiv class=\"ypc-offer-plus-page-not-available-error\"\u003e\u003ch3 class=\"ypc-offer-overlay-not-available-title\"\u003e購買功能無法使用\u003c\/h3\u003e\u003cp class=\"ypc-offer-plus-page-not-available-content\"\u003e\u003c\/p\u003e  \u003cdiv class=\"ypc-offer-overlay-not-available-action yt-uix-overlay-actions\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003e關閉\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-working\"\u003e\n              \u003cdiv class=\"yt-dialog-working-overlay\"\u003e\u003c\/div\u003e\n  \u003cdiv class=\"yt-dialog-working-bubble\"\u003e\n    \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n        \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"正在載入圖示\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n        處理中...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n      \u003c\/div\u003e\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n        \u003c\/div\u003e\n        \u003cdiv class=\"yt-dialog-focus-trap\" tabindex=\"0\"\u003e\u003c\/div\u003e\n      \u003c\/div\u003e\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n\n    \u003c\/div\u003e\n\n",
+    'YPC_UNSUBSCRIBE_OVERLAY': "      \u003cdiv id=\"ypc-unsubscribe-overlay\" class=\"yt-uix-overlay\" data-disable-shortcuts=\"true\"\u003e\n      \u003cspan class=\"yt-uix-overlay-target\"\u003e\u003c\/span\u003e\n          \u003cdiv class=\"yt-dialog hid \"\u003e\n    \u003cdiv class=\"yt-dialog-base\"\u003e\n      \u003cspan class=\"yt-dialog-align\"\u003e\u003c\/span\u003e\n      \u003cdiv class=\"yt-dialog-fg\" role=\"dialog\"\u003e\n        \u003cdiv class=\"yt-dialog-fg-content\"\u003e\n          \u003cdiv class=\"yt-dialog-loading\"\u003e\n              \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n      \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"正在載入圖示\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n載入中…\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-content\"\u003e\n              \u003cdiv class=\"ypc-unsubscribe-overlay\"\u003e\n      \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-confirm\"\u003e\n您確定要取消訂閱嗎 ？\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-xauth\"\u003e\n無法取消訂閱\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-plus-page-error\"\u003e\n無法取消訂閱\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-loading\"\u003e\n載入中…\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-success unsubscribe-delayed ypc-unsubscribe-overlay-title-success\"\u003e\n    已取消訂閱\n\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-error\"\u003e\n尚未取消購買項目\n  \u003c\/div\u003e\n\n    \u003cdiv class=\"ypc-unsubscribe-overlay-data\"\u003e\n        \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-confirm ypc-unsubscribe-overlay-confirm-content\"\u003e\n    \u003cdiv class=\"ypc-unsubscribe-overlay-content-message\"\u003e\n      完成取消訂閱的程序後，系統就會取消您的訂閱內容，不會再從您的信用卡扣款。在帳單週期結束前，您仍可以存取訂閱內容。\n\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-xauth\"\u003e\n    \u003cp\u003e\nYouTube 音樂鑰匙是 Google Play 音樂訂閱附贈的免費服務。如要取消，請前往 Google Play 音樂的\u003ca href=\"https:\/\/play.google.com\/music\/listen#\/settings\" target=\"_blank\"\u003e設定\u003c\/a\u003e頁面。\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-plus-page-error\"\u003e\n    \u003cp\u003e\n您目前是以「想不到★」管理員的身分登入，如要在 YouTube 上取消該頻道的訂閱，請以擁有者的身分登入。\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-loading\"\u003e\n      \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"正在載入圖示\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n        正在處理取消要求...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-success ypc-unsubscribe-overlay-content-success\"\u003e\n    \u003cp\u003e您已成功取消這項訂閱，日後不必再付費。\n\u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-delayed\"\u003e\n    \u003cp\u003e\n您的訂閱已取消，帳戶的顯示狀態很快就會更新。\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-error\"\u003e\n    \u003cp\u003e\n系統無法取消您的訂單。請稍後再試，或與\u003ca href=\"https:\/\/support.google.com\/youtube\/?p=commerce_contact\u0026amp;hl=zh-TW\" target=\"_blank\"\u003e支援小組\u003c\/a\u003e聯絡。\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n          \u003cdiv class=\"ypc-unsubscribe-overlay-controls unsubscribe-confirm clearfix\"\u003e\n    \u003ca href=\"\/\/support.google.com\/youtube\/?p=unsubscribe_help\u0026amp;hl=zh-TW\" class=\"yt-uix-button  ypc-unsubscribe-help yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default\" data-sessionlink=\"ei=ZxnEWNr_GYvY4gKl-o_oCA\" target=\"_blank\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003e說明\u003c\/span\u003e\u003c\/a\u003e\n\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-overlay-close ypc-unsubscribe-keep\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003e保留訂閱\u003c\/span\u003e\u003c\/button\u003e\n\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary ypc-unsubscribe-confirm\" type=\"button\" onclick=\";return false;\" data-url=\"\/transaction_handler\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003e取消訂閱\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-controls unsubscribe-success unsubscribe-xauth unsubscribe-plus-page-error unsubscribe-delayed unsubscribe-error\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003e關閉\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-working\"\u003e\n              \u003cdiv class=\"yt-dialog-working-overlay\"\u003e\u003c\/div\u003e\n  \u003cdiv class=\"yt-dialog-working-bubble\"\u003e\n    \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n        \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"正在載入圖示\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n        處理中...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n      \u003c\/div\u003e\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n        \u003c\/div\u003e\n        \u003cdiv class=\"yt-dialog-focus-trap\" tabindex=\"0\"\u003e\u003c\/div\u003e\n      \u003c\/div\u003e\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n\n    \u003c\/div\u003e\n\n"
+  });
+  yt.setConfig('GOOGLE_HELP_CONTEXT', "channel_creator");
+ytcsi.info('st', 306);ytcfg.set({"CSI_SERVICE_NAME":"youtube","CSI_VIEWPORT":true,"TIMING_ACTION":"channels","TIMING_AFT_KEYS":["vpl"],"TIMING_INFO":{"GetBrowse_rid":"0xe4f110a5f030bd19","yt_li":"1","cver":"1.20170307","c":"WEB","yt_lt":"cold"}});;  yt.setConfig({
+      'XSRF_TOKEN': "QUFFLUhqbUlDM0l5S0JWcndCVXF4dExuYlJCLUVSWjdOQXxBQ3Jtc0tsZFhKUFdNTzdnLUV5aEJzOEpvbU40Y0lCY0haOTZJckdLbUszbXV1Z05UNGRhVWdiQS1GS1Q5MEUzNTJQUTh0cUMxejJhcm81WU1OTmdlUUxUbUFoRUpkaEpHV1M4RFpFcDY3akd1UzNxd2QtTXZmVjVhWG8tSWRSY1doOE5HX3JiSzNhY21CYVdYSzFndmcwZ3JVazFVdUdmNmRTQzhDYWtCZXIybkRKZHgtUXJsRmc=",
+      'XSRF_FIELD_NAME': "session_token",
+
+      'XSRF_REDIRECT_TOKEN': "HWHMFCMQXf7trE8WfruM51NK-cl8MTQ4OTMzMjk2N0AxNDg5MjQ2NTY3"  });
+yt.setConfig('ID_TOKEN', "QUFFLUhqa0ktOTlmVUVXWFFWZlZRRVltTTMzeEtnVlFaZ3w=");window.ytcfg.set('SERVICE_WORKER_KILLSWITCH', false);  yt.setConfig('THUMB_DELAY_LOAD_BUFFER', 0);
+if (window.ytcsi) {window.ytcsi.tick("jl", null, '');}</script>
+</body></html>
+
+
